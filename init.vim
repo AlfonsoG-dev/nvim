@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'preservim/nerdtree'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sainnhe/everforest'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -17,7 +18,6 @@ Plug 'https://github.com/tpope/vim-rhubarb.git'
 call plug#end()
 "configurar scheme
 set background=dark
-set guifont=CaskaydiaCove_NFM
 set ff=dos
 syntax enable
 set nobackup

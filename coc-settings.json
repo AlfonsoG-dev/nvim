@@ -12,7 +12,7 @@
         }
     ],
     //python
-    "python.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310",
+    "python.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310/python.exe",
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
@@ -82,7 +82,7 @@
     //htmldjango
     "htmldjango.hoverLang": "jinja2",
     "htmldjango.completion.enable": true,
-    "htmldjango.builtin.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310",
+    "htmldjango.builtin.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310/python.exe",
     "htmldjango.djlint.enableLint": true,
     //html
     "html.suggest.html5": true,
