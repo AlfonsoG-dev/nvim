@@ -23,6 +23,7 @@ syntax enable
 set nobackup
 set nowritebackup
 colorscheme kanagawa-dragon
+set path='D:/Proyectos'
 
 "lineas para delimitar en donde se encuentra el cursor
 highlight CursorLine ctermfg=White ctermbg=Yellow cterm=bold guibg=#424d5e gui=bold
@@ -46,9 +47,6 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>ñ <Plug>(easymotion-k)
 
-"configuracion para que al abrir nvim sin archivos muestre el explorador
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTreeFocus | endif
 " Open the existing NERDTree on each new tab.
 autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
