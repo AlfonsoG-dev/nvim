@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'preservim/nerdtree'
+Plug 'sainnhe/everforest'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
