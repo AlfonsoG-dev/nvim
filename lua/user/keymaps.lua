@@ -55,6 +55,7 @@ nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
 nnoremap("<leader>gc", "<Cmd>Telescope git_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
+nnoremap("<leader>s", "<Cmd>Telescope treesitter<CR>")
 
 --mostrar log de git
 nnoremap("<space>g", "<Cmd>:CocCommand git.showBlameDoc<CR>")
