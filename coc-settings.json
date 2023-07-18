@@ -5,6 +5,10 @@
     "java.completion.enabled": true,
     "java.project.encoding": "warning",
     "java.codeGeneration.useBlocks": true,
+    "java.codeGeneration.generateComments": true,
+    "java.autobuild.enabled": true,
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.signatureHelp.enabled": true,
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
@@ -13,6 +17,11 @@
     ],
     //python
     "python.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310/python.exe",
+    "pyright.enable": true,
+    "pyright.inlayHints.variableTypes": true,
+    "pyright.organizeimports.provider": "pyright",
+    "pyright.inlayHints.functionReturnTypes": true,
+    "pyright.completion.snippetSupport": true,
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
@@ -56,7 +65,8 @@
     "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
     //tsserver
     "tsserver.enable": true,
-    "tsserver.useSyntaxServer": "always",
+    "tsserver.useSyntaxServer": "auto",
+    "tsserver.reportStyleChecksAsWarnings": true,
     "tsserver.experimental.enableProjectDiagnostics": true,
     //codelens
     "codeLens.enable": true,
@@ -93,7 +103,9 @@
     "html.hover.documentation": true,
     //eslint
     "eslint.run": "onSave",
-    "eslint.nodeEnv": "C:/Program Files/nodejs",
+    "eslint.packageManager": "npm",
+    "eslint.autoFixOnSave": true,
+    "eslint.nodePath": "C:/Program Files/nodejs",
     "eslint.format.enable": true,
     "eslint.trace.server": "messages",
     "eslint.alwaysShowStatus": true,
@@ -102,7 +114,8 @@
     },
     //emmet
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
+        "svelte": "html"
     },
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showAbbreviationSuggestions": true,
@@ -113,12 +126,12 @@
     "Lua.codeLens.enable": true,
     "Lua.hint.enable": true,
     "Lua.semantic.enable": true,
-    "Lua.window.statusBar": true,
     //git
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": true,
     //coc
     "coc.preferences.formatOnSave": true,
     "coc.preferences.bracketEnterImprove": true,
+    "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true
 }
