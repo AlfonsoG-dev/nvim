@@ -13,8 +13,8 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<C-Up>", ":resize -2 <CR>", opts)
-keymap("n", "<C-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<C-k>", ":resize -2 <CR>", opts)
+keymap("n", "<C-j>", ":resize +2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
@@ -34,11 +34,11 @@ keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)
 
 -- Save with Ctrl + S
-nnoremap("<C-s>", ":w!<CR>")
-nnoremap("<C-x>", ":x!<CR>")
+nnoremap("<space>w", "<cmd>:w!<CR>")
+nnoremap("<space>x", "<cmd>:x!<CR>")
 
 -- Close buffer
-nnoremap("<C-c>", ":q!<CR>")
+nnoremap("<space>q", "<cmd>:q!<CR>")
 
 -- Delete buffer
 nnoremap("<A-w>", ":bd!<CR>")
