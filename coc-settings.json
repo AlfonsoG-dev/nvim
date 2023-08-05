@@ -120,8 +120,14 @@
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showAbbreviationSuggestions": true,
     //metals
-    "metals.javaHome": "",
+    "metals.javaHome": "C:/Program Files/Java/jdk-17",
     "metals.statusBarEnabled": true,
+    "metals.enable": true,
+    "metals.sbtScript": "C:/Program Files (x86)/sbt/bin",
+    "metals.showInferredType": true,
+    "metals.showImplicitArguments": true,
+    "metals.showImplicitConversionsAndClasses": true,
+    "metals.superMethodLensesEnabled": true,
     //lua
     "Lua.codeLens.enable": true,
     "Lua.hint.enable": true,
