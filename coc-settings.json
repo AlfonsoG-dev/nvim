@@ -16,7 +16,6 @@
         }
     ],
     //python
-    "python.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310/python.exe",
     "pyright.enable": true,
     "pyright.inlayHints.variableTypes": true,
     "pyright.organizeimports.provider": "pyright",
