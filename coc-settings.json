@@ -79,6 +79,21 @@
     "css.format.braceStyle": "collapse",
     "css.completion.triggerPropertyValueCompletion": true,
     "css.completion.completePropertyWithSemicolon": true,
+    //c#
+    "languageserver": {
+        "csharp-ls": {
+            "command": "csharp-ls",
+            "filetypes": [
+                "cs"
+            ],
+            "rootPatterns": [
+                "*.csproj",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ]
+        }
+    },
     //sql
     "sql.database": "mysql",
     "sql.lintOnOpen": true,

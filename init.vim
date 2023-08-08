@@ -23,6 +23,8 @@ syntax enable
 set nobackup
 set nowritebackup
 colorscheme kanagawa-dragon
+"config para csharp
+let g:coc_global_extensions=[ 'coc-omnisharp' ]
 
 "lineas para delimitar en donde se encuentra el cursor
 highlight CursorLine ctermfg=White ctermbg=Yellow cterm=bold guibg=#424d5e gui=bold
