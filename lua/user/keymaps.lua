@@ -48,6 +48,7 @@ nnoremap("<leader>gd", "<Cmd>Git diff<CR>")
 
 -- Telescope
 nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
+nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
 nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>c", "<Cmd>Telescope commands<CR>")
@@ -55,10 +56,10 @@ nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
 nnoremap("<leader>gc", "<Cmd>Telescope git_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
-nnoremap("<leader>s", "<Cmd>Telescope treesitter<CR>")
 
 --mostrar log de git
 nnoremap("<space>g", "<Cmd>:CocCommand git.showBlameDoc<CR>")
+
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggleVCS<CR>")  -- NvimTree

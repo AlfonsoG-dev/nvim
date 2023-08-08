@@ -12,7 +12,7 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17"
+            "path": "C:/Program Files/Java/jdk-17.0.5"
         }
     ],
     //python
@@ -106,7 +106,7 @@
     //htmldjango
     "htmldjango.hoverLang": "jinja2",
     "htmldjango.completion.enable": true,
-    "htmldjango.builtin.pythonPath": "C:/Users/alfgo/AppData/Local/Programs/Python/Python310/python.exe",
+    "htmldjango.builtin.pythonPath": "C:/Python311/python.exe",
     "htmldjango.djlint.enableLint": true,
     //html
     "html.suggest.html5": true,
@@ -134,7 +134,7 @@
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showAbbreviationSuggestions": true,
     //metals
-    "metals.javaHome": "C:/Program Files/Java/jdk-17",
+    "metals.javaHome": "C:/Program Files/Java/jdk-17.0.5",
     "metals.statusBarEnabled": true,
     "metals.enable": true,
     "metals.sbtScript": "C:/Program Files (x86)/sbt/bin",

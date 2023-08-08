@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'preservim/nerdtree'
+Plug 'tribela/vim-transparent'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sainnhe/everforest'
 Plug 'rebelot/kanagawa.nvim'
