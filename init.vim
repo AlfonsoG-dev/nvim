@@ -54,10 +54,11 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 "mostrar los cambios o el log de git
 "configuracion de status bar
-set statusline+=%=
+set statusline+=
 set statusline+=<<~
 set statusline+=%{expand('%:~:.')}\ [%{WebDevIconsGetFileTypeSymbol()}]
 set statusline+=~>>
+set statusline +=%=
 "keymap para eliminar buffer
 " Use tab for trigger completion with characters ahead and navigate
 " NOTE: There's always complete item selected by default, you may want to enable
@@ -186,7 +187,9 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Add (Neo)Vim's native statusline support
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline
-set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
+set statusline +=\^
+set statusline +=%{coc#status()}
+set statusline +=/^
 
 " Mappings for CoCList
 " Show all diagnostics
