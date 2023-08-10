@@ -50,7 +50,7 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>ñ <Plug>(easymotion-k)
 
 " Open the existing NERDTree on each new tab.
-"autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 "mostrar los cambios o el log de git
 "configuracion de status bar
