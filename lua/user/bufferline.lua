@@ -20,7 +20,7 @@ require('bufferline').setup({
       if level:match('error') then
         return ' ' .. vim.g.diagnostic_icons.Error
       elseif level:match('warning') then
-        return ' ' .. vim.g.diagnostic_icons.Warning
+        return ' ' .. "~^>"
       end
       return ''
     end,
