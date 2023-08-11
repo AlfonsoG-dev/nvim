@@ -190,6 +190,8 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 set statusline +=\^
 set statusline +=%{coc#status()}
 set statusline +=/^
+set statusline ^=🦿
+set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
 
 " Mappings for CoCList
 " Show all diagnostics
