@@ -65,6 +65,10 @@ nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 --mostrar log de git
 nnoremap("<space>g", "<Cmd>:CocCommand git.showBlameDoc<CR>")
 
+--buscar con vimgrep
+keymap("n", "<leader>vg", ":vimgrep", opts)
+--abrir la busqueda de vg
+keymap("n", "<C-c>", ":copen <cr>", opts)
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggleVCS<CR>")  -- NvimTree
