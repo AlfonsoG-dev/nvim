@@ -47,8 +47,6 @@
 >>- entra en la linea de comandos de nvim y escribe:
 `:CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown coc-htmldjango coc-emmet coc-eslint coc-lua coc-sql coc-git coc-css`
 
->>- `coc-metals`: esta extensión de metals para coc esta obsoleta, ==muy pronto la reemplazare==
-
 ### Config vim-figitive for git workflow
 >>- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
@@ -68,12 +66,6 @@
 >>>- coc-config: `nvim coc-settings.json` 
 >>>- eslint: `eslint.nodoPath` 
 >>>- change node path: `C:/Program Files/nodejs` -> ruta donde se instalo NodeJS
-
->>- metals: cambia la ruta en donde se encuentra instalado `sbt` para metals
->>>- coc-config: `nvim coc-settings.json` 
->>>- metals: `metals.sbtScript`
->>> change sbt path: `C:/Program Files (x86)/sbt/bin` -> ruta donde se instalo sbt
-
 ---
 
 # Sugerencias 
