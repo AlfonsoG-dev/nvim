@@ -17,12 +17,41 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rhubarb.git'
 call plug#end()
+"change fillchars for folding, vertical split end of buffer, and message
+"separator
+set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
+set splitbelow splitright
 "configurar scheme
+scriptencoding utf-8
 set background=dark
+" Set matching pairs of characters and highlight matching brackets
+set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
+"break line at predefined character
+set linebreak
+set showbreak=↪
+set wildmode=list:longest
 set ff=dos
+set confirm
+set history=100
+set titlestring
 syntax enable
 set nobackup
+set noswapfile
 set nowritebackup
+set clipboard+=unnamedplus
+set mouse=nic
+set mousemodel=popup
+set mousescroll=ver:1,hor:6
+set shortmess+=S
+set shortmess+=I
+" Ignore certain files and folders when globing
+set wildignore+=*.o,*.obj,*.dylib,*.bin,*.dll,*.exe
+set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
+set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico
+set wildignore+=*.pyc,*.pkl
+set wildignore+=*.DS_Store
+set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
+set wildignorecase  " ignore file and dir name cases in cmd-completion
 colorscheme kanagawa-dragon
 "config para csharp
 let g:coc_global_extensions=[ 'coc-omnisharp' ]
