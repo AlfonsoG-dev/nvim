@@ -1,6 +1,6 @@
 # Configuración local de nvim para windows
->>- mi configuración inicial de nvim hecha a vace de tutoriales y otros repositorios
->>- es una configuración con la que aprendi a configurar nvim por lo tanto no esta muy ordenada
+>>- Mi configuración inicial de nvim hecha a bace de tutoriales y otros repositorios
+>>- Es mi primera configuración para nvim
 
 ---
 
@@ -11,8 +11,11 @@
 >>- [nodejs para coc-nvim](https://nodejs.org/es)
 >>- [python 3.11](https://www.python.org/downloads/release/python-3110/)
 >>- [java SE-17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+>>- [scala](https://www.scala-lang.org/download/3.3.0.html)
+>>- [mysql](https://dev.mysql.com/downloads/mysql/)
 >>- [c-# dotnet](https://dotnet.microsoft.com/en-us/download)
 >>- [omnisharp for coc-completion](https://github.com/coc-extensions/coc-omnisharp)
+>>- [sbt](https://www.scala-sbt.org/download.html)
 
 
 ---
@@ -44,5 +47,33 @@
 
 >>- `coc-metals`: esta extensión de metals para coc esta obsoleta, ==muy pronto la reemplazare==
 
-## Config vim-figitive for git workflow
+### Config vim-figitive for git workflow
 >>- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+
+### Change coc config 
+
+>>- Java: cambia la ruta en la que se encuentra instalado Java
+>>>- coc-config: `nvim coc-settings.json` 
+>>>- Java_runtime: `java.configuration.runtimes`
+>>>- Change Java Path: `C:/ProgramData/Java/jdk17` -> ruta donde se instalo java
+
+>>- Python: cambia la ruta en la que se encuentra instalado python para htmldjango
+>>>- coc-config: `nvim coc-settings.json` 
+>>>- htmldjango: `htmldjango.builtin.pythonPath`
+>>>- change python path: `C:/Python311/python.exe` -> ruta donde se instalo python
+
+>>- NodeJS: cambia la ruta en la que encuentra instalado NodeJS
+>>>- coc-config: `nvim coc-settings.json` 
+>>>- eslint: `eslint.nodoPath` 
+>>>- change node path: `C:/Program Files/nodejs` -> ruta donde se instalo NodeJS
+
+>>- metals: cambia la ruta en donde se encuentra instalado `sbt` para metals
+>>>- coc-config: `nvim coc-settings.json` 
+>>>- metals: `metals.sbtScript`
+>>> change sbt path: `C:/Program Files (x86)/sbt/bin` -> ruta donde se instalo sbt
+
+---
+# Sugerencias 
+>- esta es una configuración amater de nvim por lo tanto puedes encontrar variedad de errores
+>- no planeo modificar ni arreglar ciertos errores por el momento
+>- la configuración actual fue hecha para aprender sobro la personalización de nvim
