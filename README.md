@@ -17,9 +17,9 @@
 
 ---
 ## Instalacion chocolatey packages
->>- neovim: ``coho install neovim``
->>- ripgrep: ``coho install ripgrep``
->>- fd: ``coho install fd``
+>>- neovim: ``choco install neovim``
+>>- ripgrep: ``choco install ripgrep``
+>>- fd: ``choco install fd``
 
 ---
 ## Instalación 
@@ -39,9 +39,10 @@
 
 ## Config coc for completion
 >>- instalar packages for completion
-`CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown coc-htmldjango coc-emmet coc-eslint coc-lua coc-sql coc-git coc-css`
+>>- entra en la linea de comandos de nvim y escribe:
+`:CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown coc-htmldjango coc-emmet coc-eslint coc-lua coc-sql coc-git coc-css`
 
 >>- `coc-metals`: esta extensión de metals para coc esta obsoleta, ==muy pronto la reemplazare==
 
 ## Config vim-figitive for git workflow
->>-[vim-fugitive](https://github.com/tpope/vim-fugitive)
+>>- [vim-fugitive](https://github.com/tpope/vim-fugitive)
