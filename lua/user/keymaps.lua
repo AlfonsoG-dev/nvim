@@ -24,6 +24,8 @@ keymap("n", "<A-,>", ":bnext! <CR>", opts)
 keymap("n", "<A-.>", ":bprevious! <CR>", opts)
 keymap("n", "<A-l>", ":tabNext <CR>", opts)
 keymap("n", "<A-h>", ":tabprevious <CR>", opts)
+--mover la ventana de posición
+keymap("n", "<space>m", ":tabmove", opts)
 --navigate split buffer
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
