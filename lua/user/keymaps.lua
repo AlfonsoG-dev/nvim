@@ -13,8 +13,8 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<C-k>", ":resize -2 <CR>", opts)
-keymap("n", "<C-j>", ":resize +2 <CR>", opts)
+keymap("n", "<A-k>", ":resize -2 <CR>", opts)
+keymap("n", "<A-j>", ":resize +2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
@@ -23,6 +23,11 @@ keymap("n", "<A-,>", ":BufferLineCyclePrev <CR>", opts)
 keymap("n", "<A-.>", ":BufferLineCycleNext <CR>", opts)
 keymap("n", "<A-l>", ":BufferLineMoveNext <CR>", opts)
 keymap("n", "<A-h>", ":BufferLineMovePrev <CR>", opts)
+--navigate split buffer
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
 
 --move line
 keymap("n", "<A-Down>", "<ESC>:m .+1<CR>", opts)
