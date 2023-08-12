@@ -1,11 +1,11 @@
 {
     //java
     "java.enabled": true,
-    "java.format.enabled": true,
+    "java.format.enabled": false,
     "java.completion.enabled": true,
     "java.project.encoding": "warning",
     "java.codeGeneration.useBlocks": true,
-    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.generateComments": false,
     "java.autobuild.enabled": true,
     "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
     "java.signatureHelp.enabled": true,
@@ -24,10 +24,10 @@
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
-    "javascript.format.enable": true,
+    "javascript.format.enable": false,
     "javascript.referencesCodeLens.showOnAllFunctions": true,
     "javascript.validate.enable": true,
-    "javascript.autoClosingTags": true,
+    "javascript.autoClosingTags": false,
     "javascript.suggest.completeJSDocs": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.suggestionActions.enabled": true,
@@ -48,7 +48,6 @@
     "typescript.check.npmIsInstalled": true,
     "typescript.suggest.completeJSDocs": true,
     "typescript.implementationsCodeLens.enabled": true,
-    "typescript.format.semicolons": "insert",
     "typescript.suggestionActions.enabled": true,
     "typescript.suggest.autoImports": true,
     "typescript.inlayHints.variableTypes.enabled": true,
@@ -70,7 +69,7 @@
     "codeLens.separator": ">",
     "codeLens.subseparator": " | ",
     //css
-    "css.format.enable": true,
+    "css.format.enable": false,
     "css.hover.references": true,
     "css.hover.documentation": true,
     "css.format.braceStyle": "collapse",
@@ -97,7 +96,7 @@
     "sql.lintOnSave": true,
     //json
     "json.enable": true,
-    "json.format.enable": true,
+    "json.format.enable": false,
     "json.schemaDownload.enable": true,
     "json.validate.enable": true,
     //htmldjango
@@ -117,7 +116,7 @@
     "eslint.packageManager": "npm",
     "eslint.autoFixOnSave": true,
     "eslint.nodePath": "C:/Program Files/nodejs",
-    "eslint.format.enable": true,
+    "eslint.format.enable": false,
     "eslint.trace.server": "messages",
     "eslint.alwaysShowStatus": true,
     "eslint.codeAction.showDocumentation": {
@@ -138,7 +137,8 @@
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": true,
     //coc
-    "coc.preferences.formatOnSave": true,
+    "coc.preferences.formatOnSave": false,
+    "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true
