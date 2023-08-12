@@ -61,12 +61,13 @@ nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
 nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>c", "<Cmd>Telescope commands<CR>")
 nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
-nnoremap("<leader>gc", "<Cmd>Telescope git_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 
 --mostrar log de git
-nnoremap("<space>g", "<Cmd>:CocCommand git.showBlameDoc<CR>")
+nnoremap("<space>ga", ":Git add", opts)
+nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
+nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 
 --buscar con vimgrep
 keymap("n", "<leader>vg", ":vimgrep", opts)
