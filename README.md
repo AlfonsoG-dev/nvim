@@ -19,12 +19,14 @@
 
 
 ---
+
 ## Instalacion chocolatey packages
 >>- neovim: ``choco install neovim``
 >>- ripgrep: ``choco install ripgrep``
 >>- fd: ``choco install fd``
 
 ---
+
 ## Instalación 
 >>- clona el repositorio 
 >>- entra en la carpeta nvim que crea la clonación con : ``cd ./nvim``
@@ -73,6 +75,7 @@
 >>> change sbt path: `C:/Program Files (x86)/sbt/bin` -> ruta donde se instalo sbt
 
 ---
+
 # Sugerencias 
 >- esta es una configuración amater de nvim por lo tanto puedes encontrar variedad de errores
 >- no planeo modificar ni arreglar ciertos errores por el momento
