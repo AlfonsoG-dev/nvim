@@ -79,4 +79,4 @@
 # Sugerencias 
 >- esta es una configuración amater de nvim por lo tanto puedes encontrar variedad de errores
 >- no planeo modificar ni arreglar ciertos errores por el momento
->- la configuración actual fue hecha para aprender sobro la personalización de nvim
+>- la configuración actual fue hecha para aprender sobre la personalización de nvim
