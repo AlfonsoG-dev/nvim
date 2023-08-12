@@ -61,6 +61,7 @@ nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
 nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>c", "<Cmd>Telescope commands<CR>")
 nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
+nnoremap("<leader>gc", "<Cmd>Telescope git_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 
