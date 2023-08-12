@@ -44,6 +44,30 @@ set mousemodel=popup
 set mousescroll=ver:1,hor:6
 set shortmess+=S
 set shortmess+=I
+set pumheight=10
+set pumblend=10
+set winblend=0
+set spelllang=es,cjk
+set spellsuggest+=4
+set virtualedit=block
+set formatoptions+=mM
+set tildeop
+set synmaxcol=250
+set nostartofline
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+    set grepformat=%f:%1:%c:%m
+endif
+"set cursor color in various modes
+set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor20
+" diff options
+set diffopt=
+set diffopt+=vertical  " show diff in vertical position
+set diffopt+=filler  " show filler for deleted lines
+set diffopt+=closeoff  " turn off diff when one file window is closed
+set diffopt+=context:3  " context for diff
+set diffopt+=internal,indent-heuristic,algorithm:histogram
+set diffopt+=linematch:60
 " Ignore certain files and folders when globing
 set wildignore+=*.o,*.obj,*.dylib,*.bin,*.dll,*.exe
 set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
