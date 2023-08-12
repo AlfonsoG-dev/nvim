@@ -19,7 +19,7 @@ keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
 --navigate
-keymap("n", "<leader>te", ":tabedit <cr>", opts)
+keymap("n", "<leader>te", ":tabedit", opts)
 keymap("n", "<A-,>", ":bnext! <CR>", opts)
 keymap("n", "<A-.>", ":bprevious! <CR>", opts)
 keymap("n", "<A-l>", ":tabNext <CR>", opts)
