@@ -8,7 +8,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
-Plug 'akinsho/bufferline.nvim', {'tag': 'v3.*'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
@@ -267,6 +266,5 @@ lua << EOF
 require("user.options")
 require("user.keymaps")
 require("user.termn")
-require("user.bufferline")
 require("user.telescope")
 EOF
