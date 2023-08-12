@@ -22,7 +22,6 @@ vim.o.splitbelow         = true
 vim.o.splitright         = true
 vim.o.scrolloff          = 12                           -- Minimum offset in lines to screen borders
 vim.o.sidescrolloff      = 8
-vim.o.mouse              = 'a'
 
 -- Vim specific
 vim.o.hidden             = true                         -- Do not save when switching buffers
