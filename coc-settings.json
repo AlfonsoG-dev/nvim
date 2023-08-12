@@ -94,8 +94,6 @@
             ]
         }
     },
-    "omnisharp.trace.server": "information",
-    "omnisharp.debug.server": true,
     //sql
     "sql.database": "mysql",
     "sql.lintOnOpen": true,
