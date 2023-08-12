@@ -33,8 +33,7 @@ set wildmode=list:longest
 set ff=dos
 set confirm
 set history=100
-set titlestring
-syntax enable
+syntax sync fromstart
 set nobackup
 set noswapfile
 set nowritebackup
