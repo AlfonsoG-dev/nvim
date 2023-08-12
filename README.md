@@ -34,3 +34,14 @@
 >>>- entra a la linea de comandos de nvim con `semicolumn - ':'`
 >>>- instala los plugins: `:PlugInstall`
 >>- cierra y abre el documento para ver los cambios 
+
+---
+
+## Config coc for completion
+>>- instalar packages for completion
+`CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown coc-htmldjango coc-emmet coc-eslint coc-lua coc-sql coc-git coc-css`
+
+>>- `coc-metals`: esta extensión de metals para coc esta obsoleta, ==muy pronto la reemplazare==
+
+## Config vim-figitive for git workflow
+>>-[vim-fugitive](https://github.com/tpope/vim-fugitive)
