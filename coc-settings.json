@@ -42,6 +42,7 @@
     "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
     "javascript.suggest.includeCompletionsForImportStatements": true,
     //typescript
+    "typescript.format.enable": false,
     "typescript.referencesCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.validate.enable": true,
