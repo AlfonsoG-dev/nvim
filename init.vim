@@ -21,6 +21,7 @@ call plug#end()
 "separator
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set splitbelow splitright
+set autoread
 "configurar scheme
 scriptencoding utf-8
 set background=dark
