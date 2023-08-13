@@ -71,7 +71,7 @@ nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 
 --buscar con vimgrep
-keymap("n", "<leader>vg", ":vimgrep", opts)
+keymap("n", "<leader>vg", ":vimgrep //g", opts)
 --abrir la busqueda de vg
 keymap("n", "<C-c>", ":copen <cr>", opts)
 
