@@ -26,6 +26,17 @@ scriptencoding utf-8
 set background=dark
 " Set matching pairs of characters and highlight matching brackets
 set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
+
+"buscar selección
+function! s:VSetSearch(cmdtype)
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+
 "break line at predefined character
 set linebreak
 set showbreak=↪
