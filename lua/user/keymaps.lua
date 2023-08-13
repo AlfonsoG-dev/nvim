@@ -22,7 +22,7 @@ keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 keymap("n", "<leader>te", ":tabedit", opts)
 keymap("n", "<A-,>", ":bnext! <CR>", opts)
 keymap("n", "<A-.>", ":bprevious! <CR>", opts)
-keymap("n", "<A-l>", ":tabNext <CR>", opts)
+keymap("n", "<A-l>", ":tabnext <CR>", opts)
 keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 --mover la ventana de posición
 keymap("n", "<space>m", ":tabmove", opts)
