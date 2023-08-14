@@ -143,6 +143,7 @@
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": true,
     //coc
+    "hover.target": "float",
     "coc.preferences.formatOnSave": false,
     "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,
