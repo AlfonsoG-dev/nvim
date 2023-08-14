@@ -6,6 +6,8 @@ Plug 'sainnhe/everforest'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-pack/nvim-spectre'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'nvim-lua/plenary.nvim'
@@ -294,4 +296,5 @@ require("user.options")
 require("user.keymaps")
 require("user.termn")
 require("user.telescope")
+require("user.spectre")
 EOF
