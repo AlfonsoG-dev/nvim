@@ -54,6 +54,10 @@ nnoremap("<A-w>", ":bd!<CR>")
 --ver archivos modificados en buffer
 nnoremap("<leader>gd", "<Cmd>Git diff<CR>")
 
+-- indent in visual mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
+
 -- Telescope
 nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
