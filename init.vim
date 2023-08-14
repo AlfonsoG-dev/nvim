@@ -27,7 +27,11 @@ scriptencoding utf-8
 set background=dark
 " Set matching pairs of characters and highlight matching brackets
 set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
-
+"vimlsp completion
+let g:markdown_fenced_languages = [
+        \ 'vim',
+        \ 'help'
+      \ ]
 "buscar selección
 function! s:VSetSearch(cmdtype)
   let temp = @s

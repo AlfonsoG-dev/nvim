@@ -130,6 +130,11 @@
     },
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.showAbbreviationSuggestions": true,
+    //vim
+    "vimlsp.trace.server": "messages",
+    "vimlsp.debug": false,
+    "vimlsp.diagnostic.enable": true,
+    "vimlsp.indexes.count": 5,
     //lua
     "Lua.codeLens.enable": true,
     "Lua.hint.enable": true,
