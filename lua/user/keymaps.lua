@@ -41,6 +41,9 @@ keymap("n", "<A-Up>", "<ESC>:m .-2<CR>", opts)
 keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)
 
+--buscar y reemplazar
+keymap("n", "<leader>br", ":Spectre <CR>", opts)
+
 -- Save with Ctrl + S
 nnoremap("<space>w", "<cmd>:w!<CR>")
 nnoremap("<space>x", "<cmd>:x!<CR>")
