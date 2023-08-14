@@ -62,10 +62,10 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Telescope
-nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
+nnoremap("<leader>ff", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
-nnoremap("<leader>b", "<Cmd>Telescope buffers<CR>")
+nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>c", "<Cmd>Telescope commands<CR>")
 nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
 nnoremap("<leader>gc", "<Cmd>Telescope git_commits<CR>")
