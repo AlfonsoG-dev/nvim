@@ -138,7 +138,7 @@
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": true,
     //coc
-    "coc.preferences.formatOnSave": true,
+    "coc.preferences.formatOnSave": false,
     "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
