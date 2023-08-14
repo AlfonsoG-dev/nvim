@@ -16,6 +16,7 @@
 >>- [c-# dotnet](https://dotnet.microsoft.com/en-us/download)
 >>- [omnisharp for coc-completion](https://github.com/coc-extensions/coc-omnisharp)
 >>- [sbt](https://www.scala-sbt.org/download.html)
+>>- [nerd-fonts](https://www.nerdfonts.com)
 
 
 ---
@@ -24,6 +25,7 @@
 >>- neovim: ``choco install neovim``
 >>- ripgrep: ``choco install ripgrep``
 >>- fd: ``choco install fd``
+>>- gnu-sed: `choco install sed`
 
 ---
 
