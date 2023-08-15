@@ -88,8 +88,8 @@ set diffopt+=internal,indent-heuristic,algorithm:histogram
 set diffopt+=linematch:60
 " Ignore certain files and folders when globing
 set wildignore+=*.o,*.obj,*.dylib,*.bin,*.dll,*.exe
-set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
-set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico
+set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/*,*/bin/*,*/obj/*,*/null/*,*/metals/*,*/.bsp/*,*/blop/*,*/node_modules/**
+set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico,*.class,*.log
 set wildignore+=*.pyc,*.pkl
 set wildignore+=*.DS_Store
 set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
