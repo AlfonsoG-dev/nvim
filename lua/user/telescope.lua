@@ -1,3 +1,4 @@
+require('telescope').load_extension("conventional_commits")
 require("telescope").setup{
 defaults = {
       vimgrep_arguments = {
