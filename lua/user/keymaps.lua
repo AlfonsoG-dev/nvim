@@ -42,7 +42,9 @@ keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)
 
 --buscar y reemplazar
-keymap("n", "<leader>br", ":Spectre <CR>", opts)
+vim.keymap.set("n", "<leader>br",function()
+    require("spectre").open_file_search({select_word=true})
+end)
 
 -- Save with Ctrl + S
 nnoremap("<space>w", "<cmd>:w!<CR>")
