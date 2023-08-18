@@ -75,7 +75,7 @@ if executable('rg')
     set grepformat=%f:%1:%c:%m
 endif
 "set cursor color in various modes
-set guicursor=n-v-c-sm:block,i-ci-ve:ver25-Cursor,r-cr:hor20,o:hor50
+set guicursor=n-v-c-sm:block,i-ci-ve:ver25-block,r-cr:hor20,o:hor50
 		  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
 		  \,sm:block-blinkwait175-blinkoff150-blinkon175
 " diff options
