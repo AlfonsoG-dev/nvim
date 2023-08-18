@@ -20,8 +20,10 @@ keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
 --navigate
 keymap("n", "<leader>te", ":tabedit <CR>", opts)
-keymap("n", "<A-,>", ":tabnext <CR>", opts)
-keymap("n", "<A-.>", ":tabprevious <CR>", opts)
+keymap("n", "<A-l>", ":tabnext <CR>", opts)
+keymap("n", "<A-h>", ":tabprevious <CR>", opts)
+keymap("n", "<A-.>", ":bnext <CR>", opts)
+keymap("n", "<A-,>", ":bprevious <CR>", opts)
 --mover la ventana de posición
 keymap("n", "<space>m", ":tabmove", opts)
 --navigate split buffer
