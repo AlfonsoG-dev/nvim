@@ -1,5 +1,5 @@
 # Configuración local de nvim para windows
->>- Mi configuración inicial de nvim hecha a bace de tutoriales y otros repositorios
+>>- Mi configuración inicial de nvim hecha a base de tutoriales y otros repositorios
 >>- Es mi primera configuración para nvim
 
 ---
