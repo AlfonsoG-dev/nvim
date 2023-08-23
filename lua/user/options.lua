@@ -10,7 +10,7 @@ vim.wo.cursorcolumn = true
 
 -- Behavior
 vim.o.hlsearch           = false
-vim.o.ignorecase         = true                         -- Ignore case when using lowercase in search
+vim.o.ignorecase         = false                         -- Ignore case when using lowercase in search
 vim.o.smartcase          = true                         -- But don't ignore it when using upper case
 vim.o.smarttab           = true
 vim.o.smartindent        = true
