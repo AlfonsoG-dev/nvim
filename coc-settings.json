@@ -15,6 +15,10 @@
             "path": "C:/Program Files/Java/jdk-17"
         }
     ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "D:/Default/Proyectos/dependencias/mysql-connector-j-8.1.0/"
+    ],
     //python
     "pyright.enable": true,
     "pyright.inlayHints.variableTypes": true,
