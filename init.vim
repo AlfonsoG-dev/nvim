@@ -23,6 +23,7 @@ call plug#end()
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set splitbelow splitright
 set autoread
+set guifont=SauceCodePro%Nerd%Font%Propo
 "configurar scheme
 scriptencoding utf-8
 set background=dark
