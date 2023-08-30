@@ -117,24 +117,6 @@
     "html.autoClosingTags": true,
     "html.hover.references": true,
     "html.hover.documentation": true,
-    //eslint
-    "eslint.run": "onSave",
-    "eslint.packageManager": "npm",
-    "eslint.autoFixOnSave": true,
-    "eslint.nodePath": "C:/Program Files/nodejs",
-    "eslint.format.enable": false,
-    "eslint.trace.server": "messages",
-    "eslint.alwaysShowStatus": true,
-    "eslint.codeAction.showDocumentation": {
-        "enable": true
-    },
-    //emmet
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "svelte": "html"
-    },
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.showAbbreviationSuggestions": true,
     //vim
     "vimlsp.trace.server": "messages",
     "vimlsp.debug": false,
