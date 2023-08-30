@@ -24,7 +24,8 @@
     "pyright.inlayHints.variableTypes": true,
     "pyright.organizeimports.provider": "pyright",
     "pyright.inlayHints.functionReturnTypes": true,
-    "pyright.completion.snippetSupport": true,
+    "pyright.completion.importSupport": true,
+    "python.pythonPath": "C:/Python311/python.exe",
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
