@@ -8,10 +8,6 @@
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
     "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-17",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "D:/Default/Proyectos/dependencias/mysql-connector-j-8.1.0/"
-    ],
     //python
     "pyright.enable": true,
     "pyright.inlayHints.variableTypes": true,
