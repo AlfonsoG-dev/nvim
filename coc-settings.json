@@ -3,11 +3,21 @@
     "java.enabled": true,
     "java.format.enabled": false,
     "java.completion.enabled": true,
-    "java.project.encoding": "warning",
     "java.codeGeneration.useBlocks": true,
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
-    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-17",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-17/bin",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:/Program Files/Java/jdk-17"
+        }
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "D:/Default/Proyectos/dependencias/mysql-connector-j-8.1.0"
+    ],
     //python
     "pyright.enable": true,
     "pyright.inlayHints.variableTypes": true,
