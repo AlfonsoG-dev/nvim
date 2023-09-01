@@ -6,8 +6,6 @@
     "java.codeGeneration.useBlocks": true,
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
-    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-17/bin",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
