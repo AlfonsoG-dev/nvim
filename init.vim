@@ -24,6 +24,7 @@ call plug#end()
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set splitbelow splitright
 set autoread
+setlocal spell spelllang=es
 set guifont=SauceCodePro%Nerd%Font%Propo
 "configurar scheme
 scriptencoding utf-8
@@ -45,7 +46,7 @@ endfunction
 xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 
-"break line at predefined character
+"corta la linea en un carácter definido
 set linebreak
 set showbreak=↪
 set wildmode=list:longest
