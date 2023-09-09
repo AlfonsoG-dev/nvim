@@ -51,7 +51,7 @@ nnoremap("<space>w", "<cmd>:w!<CR>")
 nnoremap("<space>x", "<cmd>:x!<CR>")
 
 -- Close buffer
-nnoremap("<space>q", "<cmd>:quitall!<CR>")
+nnoremap("<space>q", "<cmd>:q!<CR>")
 
 -- Delete buffer
 nnoremap("<A-w>", ":bd!<CR>")
