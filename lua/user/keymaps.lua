@@ -73,6 +73,7 @@ nnoremap("<leader>c", "<Cmd>Telescope coc<CR>")
 nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
 nnoremap("<leader>gc", "<Cmd>Telescope conventional_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
+nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
 --mostrar log de git
 nnoremap("<space>ga", "<cmd>:Git add %<CR>", opts)
