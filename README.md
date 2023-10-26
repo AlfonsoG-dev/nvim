@@ -6,6 +6,7 @@
 
 ## Dependencias 
 >>- [vim-plug](https://github.com/junegunn/vim-plug)
+>>- [powershell](https://www.microsoft.com/store/productid/9MZ1SNWT0N5D?ocid=pdpshare)
 >>- [chocolatey](https://chocolatey.org/install)
 >>- [git](https://git-scm.com/download/win)
 >>- [nodejs para coc-nvim](https://nodejs.org/es)
