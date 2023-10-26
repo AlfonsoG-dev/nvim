@@ -51,6 +51,10 @@
 
 ### Config vim-figitive for git workflow
 >>- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+### Config coc-powershell for terminal integration
+>- download powershell: `winget search Microsoft.PowerShell` or from windows shop
+>>- if powershell execution is in windows path: `pwsh.exe`
+>>- if not powershell execution is not in windows path: `C:\Users\miUser\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe`
 
 ### Change coc config 
 
