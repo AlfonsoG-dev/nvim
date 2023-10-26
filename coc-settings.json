@@ -68,9 +68,10 @@
     "tsserver.reportStyleChecksAsWarnings": true,
     "tsserver.experimental.enableProjectDiagnostics": true,
     //powershell
-    "powershell.integratedConsole.showOnStartup": true,
+    "powershell.integratedConsole.showOnStartup": false,
     "powershell.powerShellExePath": "pwsh.exe",
     "powershell.enableProfileLoading": true,
+    "powershell.helpCompletion": "Disabled",
     //codelens
     "codeLens.enable": true,
     "codeLens.position": "top",
