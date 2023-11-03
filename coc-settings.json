@@ -6,6 +6,9 @@
     "java.codeGeneration.useBlocks": true,
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
+    "java.project.importHint": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.implementationsCodeLens.enabled": true,
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
