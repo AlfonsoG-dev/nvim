@@ -71,6 +71,7 @@ set spellsuggest+=4
 set virtualedit=block
 set formatoptions+=mM
 set tildeop
+set colorcolumn=120
 set synmaxcol=250
 set nostartofline
 if executable('rg')
