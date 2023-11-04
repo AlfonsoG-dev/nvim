@@ -71,7 +71,7 @@ set spellsuggest+=4
 set virtualedit=block
 set formatoptions+=mM
 set tildeop
-set colorcolumn=120
+set colorcolumn=110
 set synmaxcol=250
 set nostartofline
 if executable('rg')
@@ -103,6 +103,7 @@ colorscheme kanagawa-dragon
 let g:coc_global_extensions=[ 'coc-omnisharp' ]
 
 "lineas para delimitar en donde se encuentra el cursor
+highlight ColorColumn  ctermbg=0 guibg=#424d5e
 highlight CursorLine ctermfg=White ctermbg=Yellow cterm=bold guibg=#424d5e gui=bold
 highlight CursorColumn ctermfg=White ctermbg=Yellow cterm=bold guibg=#37475e gui=bold
 
