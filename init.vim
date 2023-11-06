@@ -22,6 +22,7 @@ call plug#end()
 "
 "separator
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
+set path+=**,.,,
 set splitbelow splitright
 set autoread
 setlocal spell spelllang=es
