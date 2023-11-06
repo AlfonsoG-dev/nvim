@@ -32,6 +32,9 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<C-h>", "<C-w>h", opts)
 
+--navigate to file and line Number
+keymap("n", "<A-f>", "<C-w>F", opts)
+
 --move line
 keymap("n", "<A-Down>", "<ESC>:m .+1<CR>", opts)
 keymap("n", "<A-Up>", "<ESC>:m .-2<CR>", opts)
