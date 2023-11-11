@@ -6,7 +6,7 @@ end
 toggleterm.setup({
  size = 20,
  open_mapping = [[<c-\>]],
- hide_numbers = true,
+ hide_numbers = false,
  shade_filetypes = {},
  shade_terminals = true,
  shading_factor = 2,
@@ -15,7 +15,7 @@ toggleterm.setup({
  persist_size = true,
  direction = "float",
  close_on_exit = true,
- shell = vim.o.shell,
+ shell = "pwsh",
  float_opts = {
   border = "curved",
   winblend = 0,
