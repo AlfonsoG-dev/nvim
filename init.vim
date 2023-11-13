@@ -294,7 +294,7 @@ set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{ge
 
 " Mappings for CoCList
 " Show all diagnostics
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics %<cr>
+nnoremap <silent><nowait> <space>a  :<C-u>CocList --no-quit --normal diagnostics<cr>
 " Manage extensions
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
@@ -302,13 +302,9 @@ nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
-nnoremap <silent><nowait> <space>s  :<C-u>CocList --regex --interactive symbols<cr>
-" Do default action for next item
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
-" Do default action for previous item
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <space>s  :<C-u>CocList --regex symbols<cr>
 " Resume latest coc list
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent><nowait> <space>g  :<C-u>CocList --no-quit --normal gchanges<CR>
 "importe de configuracion basica
 lua << EOF
 require("user.options")
