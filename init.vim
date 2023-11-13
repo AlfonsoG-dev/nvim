@@ -174,11 +174,12 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+" coc open links
+nmap <silent><leader>o <Plug>(coc-openlink)
 
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+" use space j and k for navigate to error
+nmap <silent><space>j <Plug>(coc-diagnostic-prev-error)
+nmap <silent><space>k <Plug>(coc-diagnostic-next-error)
 
 " GoTo code navigation
 nmap <silent> gd <Plug>(coc-definition)
@@ -303,6 +304,8 @@ nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
 nnoremap <silent><nowait> <space>s  :<C-u>CocList --regex symbols<cr>
+
+nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal --auto-preview location<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>g  :<C-u>CocList --no-quit --normal gchanges<CR>
 "importe de configuracion basica
