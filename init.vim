@@ -305,7 +305,7 @@ nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
 nnoremap <silent><nowait> <space>s  :<C-u>CocList --regex symbols<cr>
 
-nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal --auto-preview location<CR>
+nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal location<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>g  :<C-u>CocList --no-quit --normal gchanges<CR>
 "importe de configuracion basica
