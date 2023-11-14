@@ -26,8 +26,7 @@ set path+=**,.,,
 set isfname-=:
 set splitbelow splitright
 set autoread
-setlocal spell spelllang=es
-set guifont=SauceCodePro%Nerd%Font%Propo
+setlocal spell spelllang=en
 "configurar scheme
 scriptencoding utf-8
 set background=dark
