@@ -7,8 +7,8 @@
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
     "java.project.importHint": true,
-    "java.referencesCodeLens.enabled": false,
-    "java.implementationsCodeLens.enabled": false,
+    "java.referencesCodeLens.enabled": true,
+    "java.implementationsCodeLens.enabled": true,
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
@@ -28,8 +28,8 @@
     "pyright.completion.importSupport": true,
     "python.pythonPath": "C:/Python311/python.exe",
     //javascript
-    "javascript.referencesCodeLens.enabled": false,
-    "javascript.implementationsCodeLens.enabled": false,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.implementationsCodeLens.enabled": true,
     "javascript.format.enable": false,
     "javascript.referencesCodeLens.showOnAllFunctions": false,
     "javascript.validate.enable": true,
@@ -49,8 +49,8 @@
     "javascript.suggest.includeCompletionsForImportStatements": true,
     //typescript
     "typescript.format.enable": false,
-    "typescript.referencesCodeLens.enabled": false,
-    "typescript.referencesCodeLens.showOnAllFunctions": false,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.validate.enable": true,
     "typescript.check.npmIsInstalled": true,
     "typescript.suggest.completeJSDocs": true,
@@ -129,7 +129,7 @@
     "vimlsp.diagnostic.enable": true,
     "vimlsp.indexes.count": 5,
     //lua
-    "Lua.codeLens.enable": false,
+    "Lua.codeLens.enable": true,
     "Lua.hint.enable": true,
     "Lua.semantic.enable": true,
     //git
