@@ -23,6 +23,7 @@ call plug#end()
 "separator
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set path+=**,.,,
+filetype plugin on 
 set isfname-=:
 set splitbelow splitright
 set autoread
