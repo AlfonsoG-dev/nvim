@@ -48,7 +48,7 @@
 ## Config coc for completion
 >>- instalar packages for completion
 >>- entra en la linea de comandos de nvim y escribe:
-`:CocInstall  coc-java@1.6.0 coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-lua coc-sql coc-git coc-css coc-vimlsp coc-powershell`
+`:CocInstall  coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-lua coc-sql coc-git coc-css coc-vimlsp coc-powershell coc-sh coc-go`
 
 ### Config vim-figitive for git workflow
 >>- [vim-fugitive](https://github.com/tpope/vim-fugitive)
