@@ -1,13 +1,14 @@
 {
     //java
     "java.enabled": true,
-    "java.format.enabled": false,
+    "java.format.enabled": true,
     "java.completion.enabled": true,
     "java.codeGeneration.useBlocks": true,
     "java.codeGeneration.generateComments": true,
     "java.signatureHelp.enabled": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
+    "java.inlayHints.parameterNames.enabled": "all",
     "java.implementationsCodeLens.enabled": true,
     "java.configuration.runtimes": [
         {
@@ -30,7 +31,7 @@
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
-    "javascript.format.enable": false,
+    "javascript.format.enable": true,
     "javascript.referencesCodeLens.showOnAllFunctions": false,
     "javascript.validate.enable": true,
     "javascript.autoClosingTags": false,
@@ -48,7 +49,7 @@
     "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
     "javascript.suggest.includeCompletionsForImportStatements": true,
     //typescript
-    "typescript.format.enable": false,
+    "typescript.format.enable": true,
     "typescript.referencesCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.validate.enable": true,
@@ -81,7 +82,7 @@
     "codeLens.separator": ">",
     "codeLens.subseparator": " | ",
     //css
-    "css.format.enable": false,
+    "css.format.enable": true,
     "css.hover.references": true,
     "css.hover.documentation": true,
     "css.format.braceStyle": "collapse",
@@ -108,7 +109,7 @@
     "sql.lintOnSave": true,
     //json
     "json.enable": true,
-    "json.format.enable": false,
+    "json.format.enable": true,
     "json.schemaDownload.enable": true,
     "json.validate.enable": true,
     //htmldjango
