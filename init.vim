@@ -27,7 +27,7 @@ filetype plugin on
 set isfname-=:
 set splitbelow splitright
 set autoread
-setlocal spell spelllang=en
+setlocal spell spelllang=en_us,es
 "configurar scheme
 scriptencoding utf-8
 set background=dark
@@ -68,7 +68,7 @@ set shortmess+=I
 set pumheight=10
 set pumblend=10
 set winblend=0
-set spelllang=es,cjk
+set spelllang=en_us,es
 set spellsuggest+=4
 set virtualedit=block
 set formatoptions+=mM
