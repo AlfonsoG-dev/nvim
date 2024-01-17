@@ -17,9 +17,7 @@
         }
     ],
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "D:/Default/Proyectos/dependencias/mysql-connector-j-8.1.0",
-        "D:/Default/Proyectos/Cursos/Curso-java/Tutorials/java-mysql-eje/App.jar"
+        "lib/**/*.jar"
     ],
     //python
     "pyright.enable": true,
