@@ -1,3 +1,6 @@
+if vim.loader then
+    vim.loader.enable()
+end
 -- Visual
 vim.o.showmode           = false
 vim.o.title              = true
