@@ -86,6 +86,9 @@ nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggleVCS<CR>")  -- NvimTree
 
+-- coc search
+keymap("n", "<space>s", ":CocSearch --smart-case", opts)
+
 -- coc-powershell terminal
 nnoremap("<A-T>", "<Cmd>:CocCommand powershell.hideTerminal<CR>")
 nnoremap("<A-E>", "<Cmd>:CocCommand powershell.showTerminal<CR>")

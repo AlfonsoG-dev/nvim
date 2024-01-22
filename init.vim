@@ -308,9 +308,7 @@ nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document
 nnoremap <silent><nowait> <space>o  :<C-u>CocList --auto-preview outline<cr>
-" Search workspace symbols
-nnoremap <silent><nowait> <space>s  :<C-u>CocList --interactive symbols<cr>
-
+" re-open the seach gd gr gi location
 nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal location<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>g  :<C-u>CocList --no-quit --normal gchanges<CR>
