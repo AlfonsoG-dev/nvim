@@ -1,7 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'preservim/nerdtree'
 Plug 'tribela/vim-transparent'
-Plug 'sainnhe/everforest'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
