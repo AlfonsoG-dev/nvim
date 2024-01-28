@@ -79,14 +79,11 @@ nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
 --mostrar log de git
 nnoremap("<space>ga", "<cmd>:Git add %<CR>", opts)
-nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
+nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
-
--- coc search
-keymap("n", "<space>s", ":CocSearch --smart-case", opts)
 
 -- coc-powershell terminal
 nnoremap("<A-T>", "<Cmd>:CocCommand powershell.hideTerminal<CR>")
