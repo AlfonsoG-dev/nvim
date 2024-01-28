@@ -13,13 +13,13 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<A-k>", ":resize -2 <CR>", opts)
-keymap("n", "<A-j>", ":resize +2 <CR>", opts)
+keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
 --navigate
-keymap("n", "<leader>te", ":tabedit <CR>", opts)
+keymap("n", "<leader>te", ":tabnew <CR>", opts)
 keymap("n", "<A-l>", ":tabnext <CR>", opts)
 keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 keymap("n", "<A-.>", ":bnext <CR>", opts)
@@ -36,17 +36,17 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<A-f>", "<C-w>F", opts)
 
 --move line
-keymap("n", "<A-Down>", "<ESC>:m .+1<CR>", opts)
-keymap("n", "<A-Up>", "<ESC>:m .-2<CR>", opts)
+keymap("n", "<A-j>", "<ESC>:m .+1<CR>", opts)
+keymap("n", "<A-k>", "<ESC>:m .-2<CR>", opts)
 
 --move block line
 
-keymap("x", "<A-Down>", ":move '>+1<CR>gv=gv", opts)
-keymap("x", "<A-Up>", ":move '<-2<CR>gv=gv", opts)
+keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
+keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
 --buscar y reemplazar
 vim.keymap.set("n", "<leader>br",function()
-    require("spectre").open_file_search({select_word=true})
+    require("spectre").open_file_search({select_word=false})
 end)
 
 -- Save with Ctrl + S
@@ -55,10 +55,9 @@ nnoremap("<space>x", "<cmd>:x!<CR>")
 
 -- Close buffer
 nnoremap("<space>q", "<cmd>:q!<CR>")
-nnoremap("<space>qa", "<cmd>:quitall!<CR>")
 
 -- Delete buffer
-nnoremap("<A-w>", ":bd!<CR>")
+nnoremap("<A-w>", ":bdelete!<CR>")
 
 --ver archivos modificados en buffer
 nnoremap("<leader>gd", "<Cmd>Git diff<CR>")
@@ -84,7 +83,7 @@ nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 
 -- File explorer
-nnoremap("<C-a>", "<Cmd>:NERDTreeToggleVCS<CR>")  -- NvimTree
+nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
 
 -- coc search
 keymap("n", "<space>s", ":CocSearch --smart-case", opts)
