@@ -310,7 +310,7 @@ nnoremap <silent><nowait> <space>o  :<C-u>CocList --auto-preview outline<cr>
 " re-open the seach gd gr gi location
 nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal location<CR>
 " Resume latest coc list
-nnoremap <silent><nowait> <space>g  :<C-u>CocList --no-quit --normal gchanges<CR>
+nnoremap <silent><nowait> <space>gs  :<C-u>CocList --no-quit --normal gchanges<CR>
 "importe de configuracion basica
 lua << EOF
 require("user.options")
