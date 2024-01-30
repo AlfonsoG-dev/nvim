@@ -305,8 +305,10 @@ nnoremap <silent><nowait> <space>a  :<C-u>CocList --no-quit --normal diagnostics
 nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
+" Find symbols of current document
 nnoremap <silent><nowait> <space>o  :<C-u>CocList --auto-preview outline<cr>
+" Find symbols of lenguage
+nnoremap <silent><nowait> <space>s  :<C-u>CocList --interactive symbols<cr>
 " re-open the seach gd gr gi location
 nnoremap <silent><nowait> <space>l  :<C-u>CocList --no-quit --normal location<CR>
 " Resume latest coc list
