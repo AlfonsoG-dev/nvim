@@ -58,6 +58,9 @@ nnoremap("<space>q", "<cmd>:q!<CR>")
 -- Delete buffer
 nnoremap("<A-w>", ":bdelete!<CR>")
 
+-- toggle zen mode
+nnoremap("<C-z>", ":ZenMode<CR>")
+
 -- indent in visual mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
