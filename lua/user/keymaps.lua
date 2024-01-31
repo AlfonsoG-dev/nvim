@@ -13,10 +13,10 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<A-j>", ":resize +2 <CR>", opts)
-keymap("n", "<A-k>", ":resize -2 <CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
+keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2 <CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2 <CR>", opts)
 
 --navigate
 keymap("n", "<leader>te", ":tabnew <CR>", opts)
