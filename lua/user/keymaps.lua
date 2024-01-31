@@ -40,14 +40,16 @@ keymap("n", "<A-j>", "<ESC>:m .+1<CR>", opts)
 keymap("n", "<A-k>", "<ESC>:m .-2<CR>", opts)
 
 --move block line
-
 keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
---buscar y reemplazar
+-- buscar y reemplazar
 vim.keymap.set("n", "<leader>br",function()
     require("spectre").open_file_search({select_word=false})
 end)
+
+-- enter zen mode
+keymap("n", "<C-z>", ":ZenMode <CR>", opts);
 
 -- Save with Ctrl + S
 nnoremap("<space>w", "<cmd>:w!<CR>")
