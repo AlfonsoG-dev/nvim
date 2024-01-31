@@ -13,8 +13,8 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
-keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
+keymap("n", "<A-j>", ":resize +2 <CR>", opts)
+keymap("n", "<A-k>", ":resize -2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2 <CR>", opts)
 
@@ -35,21 +35,18 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 --navigate to file and line Number
 keymap("n", "<A-f>", "<C-w>F", opts)
 
---move line
-keymap("n", "<A-j>", "<ESC>:m .+1<CR>", opts)
-keymap("n", "<A-k>", "<ESC>:m .-2<CR>", opts)
+-- move line
+keymap("n", "<A-j>", "<ESC>:move .+1<CR>", opts)
+keymap("n", "<A-k>", "<ESC>:move .-2<CR>", opts)
 
 --move block line
 keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
--- buscar y reemplazar
+-- search and replace
 vim.keymap.set("n", "<leader>br",function()
     require("spectre").open_file_search({select_word=false})
 end)
-
--- enter zen mode
-keymap("n", "<C-z>", ":ZenMode <CR>", opts);
 
 -- Save with Ctrl + S
 nnoremap("<space>w", "<cmd>:w!<CR>")
@@ -61,14 +58,11 @@ nnoremap("<space>q", "<cmd>:q!<CR>")
 -- Delete buffer
 nnoremap("<A-w>", ":bdelete!<CR>")
 
---ver archivos modificados en buffer
-nnoremap("<leader>gd", "<Cmd>Git diff<CR>")
-
 -- indent in visual mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Telescope
+-- Telescope keymaps
 nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
@@ -79,7 +73,7 @@ nnoremap("<leader>gc", "<Cmd>Telescope conventional_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
---mostrar log de git
+-- git keymaps
 nnoremap("<space>ga", "<cmd>:Git add %<CR>", opts)
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
