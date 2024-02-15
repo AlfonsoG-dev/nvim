@@ -101,8 +101,6 @@ set wildignore+=*.DS_Store
 set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
 set wildignorecase  " ignore file and dir name cases in cmd-completion
 colorscheme kanagawa-dragon
-"config para csharp
-let g:coc_global_extensions=[ 'coc-omnisharp' ]
 
 "lineas para delimitar en donde se encuentra el cursor
 highlight ColorColumn  ctermbg=0 guibg=#424d5e

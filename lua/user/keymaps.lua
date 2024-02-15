@@ -77,7 +77,7 @@ nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
 -- git keymaps
-nnoremap("<space>ga", "<cmd>:Git add %<CR>", opts)
+nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 
