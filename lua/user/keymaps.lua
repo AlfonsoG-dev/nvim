@@ -80,6 +80,8 @@ nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
+nnoremap("<space>gc", "<Cmd>:Git commit --amend<CR>")
+
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
