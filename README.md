@@ -9,15 +9,14 @@
 >- [powershell](https://www.microsoft.com/store/productid/9MZ1SNWT0N5D?ocid=pdpshare)
 >- [chocolatey](https://chocolatey.org/install)
 >- [git](https://git-scm.com/download/win)
->- [nodejs para coc-nvim](https://nodejs.org/en)
->- [python 3.11](https://www.python.org/downloads/)
+>- [nodejs](https://nodejs.org/en)
+>- [python](https://www.python.org/downloads/)
 >- [java SE-17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
->- [scala](https://www.scala-lang.org/download/all.html)
+>- [go-language](https://go.dev)
 >- [mysql](https://dev.mysql.com/downloads/mysql/)
 >- [c-# dotnet](https://dotnet.microsoft.com/en-us/download)
->- [omnisharp for coc-completion](https://github.com/coc-extensions/coc-omnisharp)
->- [sbt](https://www.scala-sbt.org/download.html)
 >- [nerd-fonts](https://www.nerdfonts.com)
+>- [MinGW](https://www.mingw-w64.org)
 
 ---
 
@@ -44,7 +43,7 @@
 >- install coc packages for a variety of languages 
 >- in the command line use the following list of languages to install for code completion:
 ```terminal
-CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-lua coc-sql coc-git coc-css coc-vimlsp coc-powershell coc-sh coc-go coc-restclient
+CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-lua coc-sql coc-git coc-css coc-vimlsp coc-powershell coc-sh coc-go coc-restclient coc-clangd
 ```
 
 ## Config vim-figitive for git workflow
@@ -70,6 +69,9 @@ CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-prev
 >- NodeJS: set up the node path environment variable.
 >>- open coc configuration using: `nvim ~/AppData/Local/nvim/coc-settings.json`
 >>- change the node path to the environment variable: `C:/Program Files/nodejs` or use the path to the node installation.
+
+>- clangd: set up the clang lenguage server: use `CocCommand clangd.install`
+>- on windows you need MinGW
 
 ---
 
