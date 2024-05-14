@@ -176,8 +176,8 @@ endif
 nmap <silent><leader>o <Plug>(coc-openlink)
 
 " use space j and k for navigate to error
-nmap <silent><space>j <Plug>(coc-diagnostic-prev-error)
-nmap <silent><space>k <Plug>(coc-diagnostic-next-error)
+nmap <silent><space>j <Plug>(coc-diagnostic-prev)
+nmap <silent><space>k <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation
 nmap <silent> gd <Plug>(coc-definition)
