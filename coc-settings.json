@@ -8,7 +8,7 @@
     "java.signatureHelp.enabled": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
-    "java.inlayHints.parameterNames.enabled": "all",
+    "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
     "java.configuration.runtimes": [
         {
