@@ -34,3 +34,5 @@ vim.o.wildmode           = "longest,full"               -- Display auto-complete
 vim.o.updatetime         = 500                          -- Delay until write to Swap and HoldCommand event
 vim.o.timeoutlen         = 500
 vim.g.do_file_type_lua   = 1
+vim.opt.list             = true
+vim.opt.listchars:append('tab:> ')
