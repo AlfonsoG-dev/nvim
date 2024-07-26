@@ -48,6 +48,10 @@ vim.keymap.set("n", "<leader>br",function()
     require("spectre").open_file_search({select_word=false})
 end)
 
+-- Increment/decrement
+keymap('n', '+', '<C-a>', opts)
+keymap('n', '-', '<C-x>', opts)
+
 -- Save with Ctrl + S
 nnoremap("<space>w", "<cmd>:w!<CR>")
 nnoremap("<space>x", "<cmd>:x!<CR>")

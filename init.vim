@@ -19,7 +19,6 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rhubarb.git'
 call plug#end()
 "change fillchars for folding, vertical split end of buffer, and message
-"
 "separator
 set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set path+=**,.,,
