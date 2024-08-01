@@ -106,6 +106,7 @@
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    //diagnostic sign icons
     "diagnostic.errorSign": "  ",
     "diagnostic.infoSign":"  ",
     "diagnostic.hintSign": "  ",

@@ -81,6 +81,7 @@ if executable('rg')
     set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
     set grepformat=%f:%1:%c:%m
 endif
+
 "set cursor color in various modes
 set guicursor=n-v-c-sm:block,i-ci-v:ver25-CursorLine,r-cr:hor20,o:hor50
 		  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
@@ -286,7 +287,7 @@ function! StatusDiagnostic() abort
         call add(msgs, '  ' . info['information'])
     endif
     if get(info, 'hint', 0)
-        call add(msg, '  ', . info['hint'])
+        call add(msg, '  ' . info['hint'])
     endif
     if get(info, 'warning', 0)
         call add(msgs, '  ' . info['warning'])
