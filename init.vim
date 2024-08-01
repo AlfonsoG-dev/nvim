@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'preservim/nerdtree'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tribela/vim-transparent'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'folke/zen-mode.nvim'
@@ -101,6 +102,8 @@ set wildignore+=*.DS_Store
 set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
 set wildignorecase  " ignore file and dir name cases in cmd-completion
 colorscheme kanagawa-dragon
+"react jsx highlight
+let g:vim_jsx_pretty_colorful_config = 1
 
 "lineas para delimitar en donde se encuentra el cursor
 highlight ColorColumn  ctermbg=0 guibg=#424d5e
