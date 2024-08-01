@@ -302,13 +302,6 @@ function! StatusDiagnostic() abort
     return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
 endfunction
 
-highlight GitGutterAdd guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
-highlight GitGutterAddLine guibg=#003300
-highlight GitGutterChangeLine guibg=#333300
-highlight GitGutterDeleteLine guibg=#330000
-
 set statusline +=\^
 set statusline +=%{StatusDiagnostic()}
 set statusline +=/^
