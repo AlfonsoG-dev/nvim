@@ -53,7 +53,7 @@ set linebreak
 set showbreak=↪
 set wildmode=list:longest
 set ff=dos
-set fileformats=unix,dos
+set fileformats=dos,unix
 set confirm
 set history=100
 syntax sync fromstart
