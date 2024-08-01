@@ -280,13 +280,16 @@ function! StatusDiagnostic() abort
     if empty(info) | return '' | endif
     let msgs = []
     if get(info, 'error', 0)
-        call add(msgs, 'E' . info['error'])
+        call add(msgs, '  ' . info['error'])
     endif
     if get(info, 'information', 0)
-        call add(msgs, 'I' . info['information'])
+        call add(msgs, '  ' . info['information'])
+    endif
+    if get(info, 'hint', 0)
+        call add(msg, '  ', . info['hint'])
     endif
     if get(info, 'warning', 0)
-        call add(msgs, 'W' . info['warning'])
+        call add(msgs, '  ' . info['warning'])
     endif
     return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
 endfunction
