@@ -99,6 +99,9 @@
     //git
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": false,
+    "git.addedSign.text": "",
+    "git.changedDecorator": "󰚰",
+    "git.removedSign.text": "󰷭",
     //coc
     "hover.target": "float",
     "coc.preferences.formatOnSave": false,
@@ -107,16 +110,10 @@
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     //diagnostic sign icons
-    "diagnostic.errorSign": "  ",
-    "diagnostic.infoSign":"  ",
-    "diagnostic.hintSign": "  ",
-    "diagnostic.warningSign": "  ",
-    "suggest.formatItems": [
-        "menu",
-        "abbr",
-        "kind",
-        "shortcut"
-    ],
+    "diagnostic.errorSign": " ",
+    "diagnostic.infoSign":" ",
+    "diagnostic.hintSign": " ",
+    "diagnostic.warningSign": " ",
     "suggest.completionItemKindLabels": {
         "class": "󰠱",
         "color": "",

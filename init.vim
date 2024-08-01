@@ -82,6 +82,13 @@ if executable('rg')
     set grepformat=%f:%1:%c:%m
 endif
 
+"coc menu colors highlight
+highlight CocMenuSel guibg=#3c3836 guifg=#ebdbb2
+highlight CocMenu guibg=#282828 guifg=#ebdbb2
+highlight CocPumSearch guibg=#458588 guifg=#282828
+highlight CocPumSearchSel guibg=#458588 guifg=#ebdbb2
+highlight CocPumVirtualText guibg=#282828 guifg=#928374
+
 "set cursor color in various modes
 set guicursor=n-v-c-sm:block,i-ci-v:ver25-CursorLine,r-cr:hor20,o:hor50
 		  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
@@ -281,19 +288,26 @@ function! StatusDiagnostic() abort
     if empty(info) | return '' | endif
     let msgs = []
     if get(info, 'error', 0)
-        call add(msgs, '  ' . info['error'])
+        call add(msgs, ' ' . info['error'])
     endif
     if get(info, 'information', 0)
-        call add(msgs, '  ' . info['information'])
+        call add(msgs, ' ' . info['information'])
     endif
     if get(info, 'hint', 0)
-        call add(msg, '  ' . info['hint'])
+        call add(msgs, ' ' . info['hint'])
     endif
-    if get(info, 'warning', 0)
-        call add(msgs, '  ' . info['warning'])
+    if get(info, 'hint', 0)
+        call add(msgs, ' ' . info['hint'])
     endif
     return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
 endfunction
+
+highlight GitGutterAdd guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+highlight GitGutterAddLine guibg=#003300
+highlight GitGutterChangeLine guibg=#333300
+highlight GitGutterDeleteLine guibg=#330000
 
 set statusline +=\^
 set statusline +=%{StatusDiagnostic()}
