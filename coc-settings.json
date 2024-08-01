@@ -111,6 +111,35 @@
     "diagnostic.infoSign":"  ",
     "diagnostic.hintSign": "  ",
     "diagnostic.warningSign": "  ",
+    "suggest.formatItems": [
+        "menu",
+        "abbr",
+        "kind",
+        "shortcut"
+    ],
+    "suggest.completionItemKindLabels": {
+        "class": "󰠱",
+        "color": "",
+        "constructor": "",
+        "enum": "練",
+        "enumMember": "",
+        "field": "󰜢",
+        "file": "󰈙",
+        "folder": "󰉋",
+        "function": "󰊕",
+        "interface": "",
+        "keyword": "󰌋",
+        "method": "󰆧",
+        "module": "",
+        "property": "",
+        "reference": "󰈇",
+        "snippet": "",
+        "struct": "󰙅",
+        "text": "",
+        "unit": "󰑭",
+        "value": "󰎠",
+        "variable": "󰀫"
+    },
     // clangd
     "clangd.path": "~/AppData/Local/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd.exe"
 }
