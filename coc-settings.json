@@ -100,8 +100,8 @@
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": false,
     "git.addedSign.text": "",
-    "git.changedDecorator": "󰚰",
     "git.removedSign.text": "󰷭",
+    "git.changedSign.text": "󰚰",
     //coc
     "hover.target": "float",
     "coc.preferences.formatOnSave": false,
