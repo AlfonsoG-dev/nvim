@@ -84,9 +84,6 @@ endif
 
 "coc menu colors highlight
 highlight CocMenuSel guibg=#3c3836 guifg=#ebdbb2
-highlight CocMenu guibg=#282828 guifg=#ebdbb2
-highlight CocPumSearch guibg=#458588 guifg=#282828
-highlight CocPumSearchSel guibg=#458588 guifg=#ebdbb2
 highlight CocPumVirtualText guibg=#282828 guifg=#928374
 
 "set cursor color in various modes
