@@ -92,10 +92,6 @@
     "vimlsp.debug": false,
     "vimlsp.diagnostic.enable": true,
     "vimlsp.indexes.count": 5,
-    //lua
-    "Lua.codeLens.enable": true,
-    "Lua.hint.enable": true,
-    "Lua.semantic.enable": true,
     //git
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": false,

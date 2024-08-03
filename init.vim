@@ -133,17 +133,6 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>ñ <Plug>(easymotion-k)
 
-" Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | tabedit | endif
-
-" Start NERDTree when Vim starts with a directory argument.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'tabnew' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
-
 "mostrar los cambios o el log de git
 "configuracion de status bar
 set statusline+=
@@ -217,7 +206,7 @@ nmap <leader>ff <Plug>(coc-format-selected)
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s)
-  autocmd FileType typescript,json,java,vim,lua setl formatexpr=CocAction('formatSelected')
+  autocmd FileType typescript,javascript,json,java,sql,html setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end

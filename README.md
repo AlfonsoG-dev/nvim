@@ -43,7 +43,7 @@
 >- install coc packages for a variety of languages 
 >- in the command line use the following list of languages to install for code completion:
 ```terminal
-CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-lua coc-sql coc-git coc-css coc-vimlsp coc-powershell coc-sh coc-go coc-restclient coc-clangd
+CocInstall coc-java coc-pyright coc-json coc-tsserver coc-html coc-markdown-preview-enhanced coc-webview coc-htmldjango coc-sql coc-git coc-css coc-vimlsp coc-powershell coc-sh coc-go coc-restclient coc-clangd
 ```
 
 ## Config vim-figitive for git workflow
