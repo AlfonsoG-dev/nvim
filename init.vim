@@ -282,9 +282,6 @@ function! StatusDiagnostic() abort
     if get(info, 'hint', 0)
         call add(msgs, ' ' . info['hint'])
     endif
-    if get(info, 'hint', 0)
-        call add(msgs, ' ' . info['hint'])
-    endif
     return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
 endfunction
 
