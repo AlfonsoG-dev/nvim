@@ -51,7 +51,7 @@ xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 "corta la linea en un carácter definido
 set linebreak
 set showbreak=↪
-set wildmode=list:longest
+set wildmode=full
 set ff=dos
 set fileformats=dos,unix
 set confirm
