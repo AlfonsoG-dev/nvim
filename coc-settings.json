@@ -78,11 +78,6 @@
     "json.format.enable": true,
     "json.schemaDownload.enable": true,
     "json.validate.enable": true,
-    //htmldjango
-    "htmldjango.hoverLang": "jinja2",
-    "htmldjango.completion.enable": true,
-    "htmldjango.builtin.pythonPath": "C:/Python311/python.exe",
-    "htmldjango.djlint.enableLint": true,
     //html
     "html.suggest.html5": true,
     "html.validate.styles": true,

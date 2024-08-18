@@ -6,7 +6,7 @@ Plug 'rebelot/kanagawa.nvim'
 
 Plug 'easymotion/vim-easymotion'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
