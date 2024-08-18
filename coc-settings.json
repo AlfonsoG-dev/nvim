@@ -26,9 +26,6 @@
     "pyright.inlayHints.functionReturnTypes": false,
     "pyright.completion.importSupport": true,
     "python.pythonPath": "C:/Python311/python.exe",
-    // tsserver
-    "tsserver.trace.server": "verbose",
-    "tsserver.implicitProjectConfig.checkJs": true,
     //javascript
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
