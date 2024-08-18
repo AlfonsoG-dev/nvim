@@ -13,8 +13,8 @@ local xnoremap = Utils.xnoremap
 local inoremap = Utils.inoremap
 
 --reize window
-keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
-keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
+keymap("n", "<C-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<C-Up>", ":resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2 <CR>", opts)
 
@@ -25,7 +25,8 @@ keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 keymap("n", "<A-.>", ":bnext <CR>", opts)
 keymap("n", "<A-,>", ":bprevious <CR>", opts)
 --mover la ventana de posición
-keymap("n", "<space>tm", ":tabmove", opts)
+keymap("n", "<space>t-", ":tabmove -1<CR>", opts)
+keymap("n", "<space>t+", ":tabmove +1<CR>", opts)
 --navigate split buffer
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
@@ -43,11 +44,6 @@ keymap("n", "<A-k>", "<ESC>:move .-2<CR>", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
--- search and replace
-vim.keymap.set("n", "<leader>br",function()
-    require("spectre").open_file_search({select_word=false})
-end)
-
 -- Increment/decrement
 keymap('n', '+', '<C-a>', opts)
 keymap('n', '-', '<C-x>', opts)
@@ -63,7 +59,7 @@ nnoremap("<space>q", "<cmd>:q!<CR>")
 nnoremap("<A-w>", ":bdelete!<CR>")
 
 -- toggle zen mode
-nnoremap("<C-z>", ":ZenMode<CR>")
+nnoremap("<leader>z", ":ZenMode<CR>")
 
 -- indent in visual mode
 keymap("v", "<", "<gv", opts)

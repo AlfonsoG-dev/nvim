@@ -28,8 +28,6 @@ vim.cmd[[
     else
       inoremap <silent><expr> <c-@> coc#refresh()
     endif
-    " coc open links
-    nmap <silent><leader>o <Plug>(coc-openlink)
 
     " use space j and k for navigate to error
     nmap <silent><space>j <Plug>(coc-diagnostic-prev)

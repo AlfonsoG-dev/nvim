@@ -1,21 +1,25 @@
 call plug#begin("~/AppData/local/nvim/plugged")
-Plug 'preservim/nerdtree'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tribela/vim-transparent'
-Plug 'fannheyward/telescope-coc.nvim'
 Plug 'folke/zen-mode.nvim'
 Plug 'rebelot/kanagawa.nvim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
 Plug 'easymotion/vim-easymotion'
-Plug 'nvim-pack/nvim-spectre'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+Plug 'preservim/nerdtree'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'olacin/telescope-cc.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
+
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 Plug 'ryanoasis/vim-devicons'
+
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rhubarb.git'
 call plug#end()
@@ -152,5 +156,4 @@ require("user.options")
 require("user.keymaps")
 require("user.termn")
 require("user.telescope")
-require("user.spectre")
 EOF
