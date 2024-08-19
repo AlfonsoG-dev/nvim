@@ -1,7 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tribela/vim-transparent'
-Plug 'folke/zen-mode.nvim'
 Plug 'rebelot/kanagawa.nvim'
 
 Plug 'easymotion/vim-easymotion'
