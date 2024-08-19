@@ -1,7 +1,6 @@
 vim.cmd[[
     "mostrar los cambios o el log de git
     "configuracion de status bar
-    set statusline+=
     set statusline+=
     set statusline+=<<~
     set statusline+=%{expand('%:~:.')}\ [%{WebDevIconsGetFileTypeSymbol()}]
@@ -27,8 +26,8 @@ vim.cmd[[
         return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
     endfunction
 
-    set statusline +=\^
+    set statusline +=\ ^
     set statusline +=%{StatusDiagnostic()}
-    set statusline +=\^
+    set statusline +=\ ^
     set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
 ]]
