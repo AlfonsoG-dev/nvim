@@ -4,13 +4,9 @@
 local Utils = require("user.utils")
 local opts = {noremap = true, silent = true}
 local keymap = vim.api.nvim_set_keymap
-local op = {buffer = 0}
 
 -- local exprnnoremap = Utils.exprnnoremap
 local nnoremap = Utils.nnoremap
-local vnoremap = Utils.vnoremap
-local xnoremap = Utils.xnoremap
-local inoremap = Utils.inoremap
 
 --reize window
 keymap("n", "<C-Down>", ":resize +2 <CR>", opts)
