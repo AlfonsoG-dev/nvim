@@ -29,6 +29,6 @@ vim.cmd[[
 
     set statusline +=\^
     set statusline +=%{StatusDiagnostic()}
-    set statusline +=/^
+    set statusline +=\^
     set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
 ]]
