@@ -9,8 +9,8 @@ local keymap = vim.api.nvim_set_keymap
 local nnoremap = Utils.nnoremap
 
 --reize window
-keymap("n", "<C-Down>", ":resize +2 <CR>", opts)
-keymap("n", "<C-Up>", ":resize -2 <CR>", opts)
+keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2 <CR>", opts)
 
@@ -21,8 +21,8 @@ keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 keymap("n", "<A-.>", ":bnext <CR>", opts)
 keymap("n", "<A-,>", ":bprevious <CR>", opts)
 --mover la ventana de posición
-keymap("n", "<space>t-", "<ESC>:tabmove -1<CR>", opts)
-keymap("n", "<space>t+", "<ESC>:tabmove +1<CR>", opts)
+keymap("n", "<leader>t-", "<ESC>:tabmove -1<CR>", opts)
+keymap("n", "<leader>t+", "<ESC>:tabmove +1<CR>", opts)
 --navigate split buffer
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
