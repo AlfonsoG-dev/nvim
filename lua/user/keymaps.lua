@@ -9,10 +9,10 @@ local keymap = vim.api.nvim_set_keymap
 local nnoremap = Utils.nnoremap
 
 --reize window
-keymap("n", "<A-Down>", ":resize +2 <CR>", opts)
-keymap("n", "<A-Up>", ":resize -2 <CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize -2 <CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize +2 <CR>", opts)
+keymap("n", "<C-A-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<C-A-Up>", ":resize -2 <CR>", opts)
+keymap("n", "<C-A-Right>", ":vertical resize -2 <CR>", opts)
+keymap("n", "<C-A-Left>", ":vertical resize +2 <CR>", opts)
 
 --navigate
 keymap("n", "<leader>te", ":tabnew <CR>", opts)
