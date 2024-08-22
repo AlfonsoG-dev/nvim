@@ -7,6 +7,10 @@ local keymap = vim.api.nvim_set_keymap
 
 -- local exprnnoremap = Utils.exprnnoremap
 local nnoremap = Utils.nnoremap
+local nmap = Utils.nmap
+
+-- markdown 
+nmap('<leader>rm', '<Plug>MarkdownPreviewToggle')
 
 --reize window
 keymap("n", "<C-A-Down>", ":resize +2 <CR>", opts)
@@ -20,9 +24,11 @@ keymap("n", "<A-l>", ":tabnext <CR>", opts)
 keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 keymap("n", "<A-.>", ":bnext <CR>", opts)
 keymap("n", "<A-,>", ":bprevious <CR>", opts)
+
 --mover la ventana de posición
 keymap("n", "<leader>t-", "<ESC>:tabmove -1<CR>", opts)
 keymap("n", "<leader>t+", "<ESC>:tabmove +1<CR>", opts)
+
 --navigate split buffer
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
