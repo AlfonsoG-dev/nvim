@@ -19,15 +19,15 @@ keymap("n", "<C-A-Right>", ":vertical resize -2 <CR>", opts)
 keymap("n", "<C-A-Left>", ":vertical resize +2 <CR>", opts)
 
 --navigate
-keymap("n", "<leader>te", ":tabnew <CR>", opts)
+keymap("n", "<leader>tn", ":tabnew <CR>", opts)
 keymap("n", "<A-l>", ":tabnext <CR>", opts)
 keymap("n", "<A-h>", ":tabprevious <CR>", opts)
 keymap("n", "<A-.>", ":bnext <CR>", opts)
 keymap("n", "<A-,>", ":bprevious <CR>", opts)
 
 --mover la ventana de posición
-keymap("n", "<leader>t-", "<ESC>:tabmove -1<CR>", opts)
-keymap("n", "<leader>t+", "<ESC>:tabmove +1<CR>", opts)
+keymap("n", "<leader>t-", "<ESC>:-tabmove<CR>", opts)
+keymap("n", "<leader>t+", "<ESC>:+tabmove<CR>", opts)
 
 --navigate split buffer
 keymap("n", "<C-j>", "<C-w>j", opts)
