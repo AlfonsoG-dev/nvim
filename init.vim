@@ -1,4 +1,3 @@
-"call plug#begin("~/.config/nvim/plugged")
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tribela/vim-transparent'
