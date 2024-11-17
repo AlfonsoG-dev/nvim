@@ -57,7 +57,8 @@ xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
 set linebreak
 set showbreak=↪
 set wildmode=full
-set fileformats=dos,unix
+set ff=dos
+set fileformats=dos
 set confirm
 set history=100
 syntax on
