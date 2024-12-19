@@ -34,6 +34,10 @@
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+
+    "powershell.startAutomatically": false,
+    "powershell.powerShellExePath": "pwsh.exe",
+
     //codelens
     "codeLens.enable": true,
     "codeLens.position": "top",
