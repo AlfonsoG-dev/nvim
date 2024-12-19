@@ -4,7 +4,7 @@ Plug 'tribela/vim-transparent'
 Plug 'rebelot/kanagawa.nvim'
 
 Plug 'easymotion/vim-easymotion'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
