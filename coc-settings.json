@@ -34,11 +34,6 @@
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-    //powershell
-    "powershell.integratedConsole.showOnStartup": false,
-    "powershell.powerShellExePath": "pwsh.exe",
-    "powershell.enableProfileLoading": true,
-    "powershell.helpCompletion": "LineComment",
     //codelens
     "codeLens.enable": true,
     "codeLens.position": "top",
@@ -127,7 +122,5 @@
         "unit": "󰑭",
         "value": "󰎠",
         "variable": "󰀫"
-    },
-    // clangd
-    "clangd.path": "~/AppData/Local/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd.exe"
+    }
 }
