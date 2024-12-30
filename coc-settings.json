@@ -10,6 +10,7 @@
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
+    "java.server.launchMode": "Hybrid",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
