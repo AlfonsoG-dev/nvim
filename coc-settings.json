@@ -1,5 +1,4 @@
 {
-    //java
     "java.enabled": true,
     "java.format.enabled": true,
     "java.completion.enabled": true,
@@ -20,119 +19,105 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    //python
+
     "pyright.enable": true,
     "pyright.inlayHints.variableTypes": false,
     "pyright.organizeimports.provider": "pyright",
     "pyright.inlayHints.functionReturnTypes": false,
     "pyright.completion.importSupport": true,
     "python.pythonPath": "C:/Python311/python.exe",
-    //javascript
+
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
-    //typescript
+    "javascript.preferences.useAliasesForRenames": false,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "javascript.format.insertSpaceAfterCommaDelimiter": false,
     "typescript.referencesCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "typescript.workspaceSymbols.scope": "currentProject",
+    "typescript.preferences.useAliasesForRenames": false,
+    "typescript.format.insertSpaceAfterCommaDelimiter": false,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
 
     "powershell.startAutomatically": false,
     "powershell.powerShellExePath": "pwsh.exe",
+    "powershell.integratedConsole.showOnStartup": false,
 
-    //codelens
     "codeLens.enable": true,
     "codeLens.position": "top",
-    "codeLens.separator": ">",
-    "codeLens.subseparator": " | ",
-    //css
+    "codeLens.separator": "󰕞",
+    "codeLens.subseparator": "󰘤",
+
     "css.format.enable": true,
     "css.hover.references": true,
     "css.hover.documentation": true,
     "css.format.braceStyle": "collapse",
     "css.completion.triggerPropertyValueCompletion": true,
     "css.completion.completePropertyWithSemicolon": true,
-    //c#
-    "languageserver": {
-        "csharp-ls": {
-            "command": "csharp-ls",
-            "filetypes": [
-                "cs"
-            ],
-            "rootPatterns": [
-                "*.csproj",
-                ".vim/",
-                ".git/",
-                ".hg/"
-            ]
-        }
-    },
-    //sql
+    
     "sql.database": "mysql",
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
-    //json
+
     "json.enable": true,
     "json.format.enable": true,
     "json.schemaDownload.enable": true,
     "json.validate.enable": true,
-    //html
-    "html.suggest.html5": true,
-    "html.validate.styles": true,
-    "html.autoCreateQuotes": true,
-    "html.autoClosingTags": true,
-    "html.hover.references": true,
-    "html.hover.documentation": true,
-    //vim
-    "vimlsp.trace.server": "messages",
+
+
+    "vimlsp.trace.server": "off",
     "vimlsp.debug": false,
     "vimlsp.diagnostic.enable": true,
-    "vimlsp.indexes.count": 5,
-    //git
+    "vimlsp.indexes.count": 10,
+
     "git.enableGutters": true,
     "git.addGBlameToVirtualText": false,
     "git.addedSign.text": "",
-    "git.removedSign.text": "󰷭",
-    "git.changedSign.text": "󰚰",
-    //coc
+    "git.removedSign.text": "",
+    "git.changedSign.text": "󰷭",
+    
     "hover.target": "float",
     "coc.preferences.formatOnSave": false,
     "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    //diagnostic sign icons
-    "diagnostic.errorSign": " ",
-    "diagnostic.infoSign":" ",
-    "diagnostic.hintSign": " ",
-    "diagnostic.warningSign": " ",
+
+    "diagnostic.errorSign": "",
+    "diagnostic.infoSign":"",
+    "diagnostic.hintSign": "󰘥",
+    "diagnostic.warningSign": "",
     "suggest.insertMode": "insert",
     "suggest.removeDuplicateItems": true,
     "suggest.completionItemKindLabels": {
-        "class": "󰠱",
+        "class": "",
         "color": "",
         "constructor": "",
-        "enum": "練",
+        "enum": "󰠱",
         "enumMember": "",
         "field": "󰜢",
         "file": "󰈙",
         "folder": "󰉋",
         "function": "󰊕",
         "interface": "",
-        "keyword": "󰌋",
-        "constant": "󱗘",
+        "keyword": "󱜦",
+        "constant": "󱃘",
         "event": "",
         "operator": "",
         "typeParameter": "",
         "default": "󰳾",
         "method": "󰆧",
-        "module": "",
+        "module": "󰙅",
         "property": "",
         "reference": "󰈇",
         "snippet": "",
-        "struct": "󰙅",
-        "text": "",
+        "struct": "",
+        "text": "󱎸",
         "unit": "󰑭",
         "value": "󰎠",
-        "variable": "󰀫"
+        "variable": ""
     }
 }
