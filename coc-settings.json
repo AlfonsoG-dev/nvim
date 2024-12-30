@@ -49,7 +49,7 @@
     "codeLens.enable": true,
     "codeLens.position": "top",
     "codeLens.separator": "󰕞",
-    "codeLens.subseparator": "󰘤",
+    "codeLens.subseparator": " 󰘤 ",
 
     "css.format.enable": true,
     "css.hover.references": true,
