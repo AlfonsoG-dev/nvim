@@ -9,7 +9,7 @@
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
-    "java.server.launchMode": "Hybrid",
+    "java.server.launchMode": "Standard",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
@@ -17,7 +17,8 @@
         }
     ],
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib/**/*.jar",
+        "D:/Descargas/instalador/java/lombok.jar"
     ],
 
     "pyright.enable": true,
