@@ -13,7 +13,8 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17"
+            "path": "C:/Program Files/Java/jdk-17",
+            "default": true
         }
     ],
     "java.project.referencedLibraries": [
@@ -86,6 +87,7 @@
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "semanticTokens.enable": true,
 
     "diagnostic.errorSign": "",
     "diagnostic.infoSign":"",
