@@ -10,6 +10,7 @@
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
     "java.server.launchMode": "Standard",
+    "java.jdt.ls.lombokSupport.enabled": true,
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
@@ -18,8 +19,7 @@
         }
     ],
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "D:/Descargas/instalador/java/lombok.jar"
+        "lib/**/*.jar"
     ],
 
     "pyright.enable": true,
