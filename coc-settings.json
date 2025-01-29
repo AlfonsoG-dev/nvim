@@ -36,12 +36,10 @@
     "javascript.format.insertSpaceAfterCommaDelimiter": false,
     "typescript.referencesCodeLens.enabled": true,
     "typescript.referencesCodeLens.showOnAllFunctions": true,
-    "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
     "typescript.workspaceSymbols.scope": "currentProject",
     "typescript.preferences.useAliasesForRenames": false,
     "typescript.format.insertSpaceAfterCommaDelimiter": false,
-    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
     "typescript.implementationsCodeLens.enabled": true,
 
     "powershell.startAutomatically": false,
