@@ -10,6 +10,11 @@
         "Error": ""
     },
     "java.signatureHelp.enabled": true,
+    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/",
+    "java.jdt.ls.javac.enabled": "on",
+    "java.completion.engine":"dom",
+    "java.implementationCodeLens": "all",
+    "java.configuration.detectJdks": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
@@ -17,6 +22,7 @@
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": true,
+    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.1",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
