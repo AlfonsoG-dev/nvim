@@ -4,12 +4,18 @@
     "java.completion.enabled": true,
     "java.codeGeneration.useBlocks": true,
     "java.codeGeneration.generateComments": true,
+    "java.jdt.ls.statusIcons": {
+        "ready": "󰩐",
+        "warning": "",
+        "Error": ""
+    },
     "java.signatureHelp.enabled": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
     "java.server.launchMode": "Standard",
+    "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": true,
     "java.configuration.runtimes": [
         {
