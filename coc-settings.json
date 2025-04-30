@@ -25,8 +25,8 @@
     "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.1",
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-23",
-            "path": "C:/Program Files/Java/jdk-23",
+            "name": "JavaSE-17",
+            "path": "D:/Descargas/instalador/java/jdk/jdk-17.0.12",
             "default": true
         }
     ],
