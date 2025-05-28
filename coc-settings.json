@@ -10,7 +10,7 @@
         "Error": ""
     },
     "java.signatureHelp.enabled": true,
-    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/",
+    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/jdt-language-server-1.9.0-202203031534",
     "java.jdt.ls.javac.enabled": "on",
     "java.completion.engine":"dom",
     "java.implementationCodeLens": "all",
