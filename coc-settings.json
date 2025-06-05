@@ -10,10 +10,8 @@
         "Error": ""
     },
     "java.signatureHelp.enabled": true,
-    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/jdt-language-server-1.9.0-202203031534",
-    "java.jdt.ls.javac.enabled": "on",
-    "java.completion.engine":"dom",
     "java.implementationCodeLens": "all",
+    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/jdt-language-server-1.9.0-202203031534/",
     "java.configuration.detectJdks": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
@@ -22,12 +20,16 @@
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": true,
-    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.1",
+    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.2/",
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-17",
-            "path": "D:/Descargas/instalador/java/jdk/jdk-17.0.12",
+            "name": "JavaSE-23",
+            "path": "C:/Program Files/Java/jdk-23/",
             "default": true
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "C:/Program Files/Java/jdk-17/"
         }
     ],
     "java.project.referencedLibraries": [
