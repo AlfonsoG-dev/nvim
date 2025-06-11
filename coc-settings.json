@@ -11,7 +11,6 @@
     },
     "java.signatureHelp.enabled": true,
     "java.implementationCodeLens": "all",
-    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/jdt-language-server-1.9.0-202203031534/",
     "java.configuration.detectJdks": true,
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
@@ -23,13 +22,13 @@
     "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.2/",
     "java.configuration.runtimes": [
         {
+            "name": "JavaSE-17",
+            "path": "C:/Program Files/Java/jdk-17/"
+        },
+        {
             "name": "JavaSE-23",
             "path": "C:/Program Files/Java/jdk-23/",
             "default": true
-        },
-        {
-            "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17/"
         }
     ],
     "java.project.referencedLibraries": [
