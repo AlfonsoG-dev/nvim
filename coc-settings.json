@@ -16,18 +16,15 @@
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
+    "java.jdt.ls.directory": "D:/Descargas/instalador/java/jdlts/jdt-language-server-1.9.0-202203031534",
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": true,
-    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.2/",
+    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-17.0.12",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17/"
-        },
-        {
-            "name": "JavaSE-23",
-            "path": "C:/Program Files/Java/jdk-23/",
+            "path": "C:/Program Files/Java/jdk-17/",
             "default": true
         }
     ],
