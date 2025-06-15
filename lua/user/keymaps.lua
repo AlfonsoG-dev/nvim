@@ -75,6 +75,13 @@ nnoremap("<leader>gc", "<Cmd>Telescope conventional_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
+-- search with :g
+vim.keymap.set('n', '<leader>ll', function()
+  local word = vim.fn.expand("<cword>")
+  vim.cmd('vimgrep /' .. word .. '/j **/*')
+  vim.cmd('copen')
+end, { noremap = true, silent = true })
+
 -- git keymaps
 nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
