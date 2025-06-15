@@ -3,11 +3,14 @@
 
 local Utils = require("user.utils")
 local opts = {noremap = true, silent = true}
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 
 -- local exprnnoremap = Utils.exprnnoremap
 local nnoremap = Utils.nnoremap
 local nmap = Utils.nmap
+
+-- cancel hlsearch with ESC
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR><Esc>", opts)
 
 -- markdown 
 nmap('<leader>rm', '<Plug>MarkdownPreviewToggle')
@@ -46,6 +49,10 @@ keymap("n", "<A-k>", "<ESC>:move .-2<CR>", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
+-- move by lines in wrap text
+keymap("n", "j", "v:count == 0 ? 'gj' : 'j'", {expr = true, silent = true})
+keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", {expr = true, silent = true})
+
 -- Increment/decrement
 keymap('n', '+', '<C-a>', opts)
 keymap('n', '-', '<C-x>', opts)
@@ -75,8 +82,8 @@ nnoremap("<leader>gc", "<Cmd>Telescope conventional_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
--- search with :g
-vim.keymap.set('n', '<leader>ll', function()
+-- search the current word under cursor
+keymap('n', '<leader>ll', function()
   local word = vim.fn.expand("<cword>")
   vim.cmd('vimgrep /' .. word .. '/j **/*')
   vim.cmd('copen')
