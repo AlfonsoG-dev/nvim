@@ -9,7 +9,7 @@ Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --f
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
 Plug 'nvim-lua/plenary.nvim'
@@ -32,7 +32,6 @@ filetype plugin on
 set isfname-=:
 set splitbelow splitright
 set autoread
-setlocal spell spelllang=en_us,es
 "configurar scheme
 scriptencoding utf-8
 set background=dark
@@ -69,12 +68,10 @@ set clipboard+=unnamedplus
 set mouse=nic
 set mousemodel=popup
 set mousescroll=ver:1,hor:6
-set shortmess+=S
-set shortmess+=I
 set pumheight=10
 set pumblend=10
 set winblend=10
-set spelllang=en_us,es
+set spell spelllang=en_us,es
 set spellsuggest+=4
 set virtualedit=block
 set formatoptions+=mM
