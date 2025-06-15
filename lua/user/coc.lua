@@ -1,12 +1,35 @@
--- utils
 local keymap = vim.keymap.set
--- Función auxiliar para verificar espacio atrás
+
+-- Función auxiliar para verificar si hay espacio atrás
 function _G.CheckBackspace()
     local col = vim.fn.col('.') - 1
     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
 end
 
--- Mostrar documentación
+-- Función inteligente para <Tab> con coc-pum y snippets
+function _G.smart_tab()
+    if vim.fn['coc#pum#visible']() == 1 then
+        return vim.fn 
+    elseif vim.fn['coc#expandable']() == 1 then
+        return vim.fn['coc#rpc#request']('doKeymap', {'snippets-expand', ''})
+    elseif CheckBackspace() then
+        return '\t'
+    else
+        vim.fn['coc#refresh']()
+        return ''
+    end
+end
+
+-- Función inteligente para <CR>
+function _G.smart_cr()
+    if vim.fn['coc#pum#visible']() == 1 then
+        return vim.fn['coc#pum#confirm']()
+    else
+        return "\n"
+    end
+end
+
+-- Mostrar documentación flotante
 function _G.ShowDocumentation()
     if vim.fn.CocAction('hasProvider', 'hover') then
         vim.fn.CocActionAsync('doHover')
@@ -16,9 +39,9 @@ function _G.ShowDocumentation()
 end
 
 -- Keymaps para completion
-keymap("i", "<Tab>", [[coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\<Tab>" : coc#refresh()]], { expr = true, silent = true })
+keymap("i", "<Tab>", "v:lua.smart_tab()", { expr = true, silent = true })
 keymap("i", "<S-Tab>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], { expr = true, silent = true })
-keymap("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], { expr = true, silent = true })
+keymap("i", "<CR>", "v:lua.smart_cr()", { expr = true, silent = true })
 keymap("i", "<C-Space>", "coc#refresh()", { expr = true, silent = true })
 
 -- Navegación de errores
@@ -43,33 +66,38 @@ vim.api.nvim_create_autocmd("CursorHold", {
 
 -- Rename y formato
 keymap("n", "<leader>rn", "<Plug>(coc-rename)", { silent = true })
-keymap({"x", "n"}, "<leader>ff", "<Plug>(coc-format-selected)", { silent = true })
+keymap({ "x", "n" }, "<leader>ff", "<Plug>(coc-format-selected)", { silent = true })
 
 -- Code actions
-keymap({"x", "n"}, "<leader>a", "<Plug>(coc-codeaction-selected)", { silent = true })
+keymap({ "x", "n" }, "<leader>a", "<Plug>(coc-codeaction-selected)", { silent = true })
 keymap("n", "<leader>ac", "<Plug>(coc-codeaction-cursor)", { silent = true })
 keymap("n", "<leader>as", "<Plug>(coc-codeaction-source)", { silent = true })
 keymap("n", "<leader>qf", "<Plug>(coc-fix-current)", { silent = true })
 
 -- Refactor
 keymap("n", "<leader>re", "<Plug>(coc-codeaction-refactor)", { silent = true })
-keymap({"x", "n"}, "<leader>r", "<Plug>(coc-codeaction-refactor-selected)", { silent = true })
+keymap({ "x", "n" }, "<leader>r", "<Plug>(coc-codeaction-refactor-selected)", { silent = true })
 
 -- Codelens
 keymap("n", "<leader>cl", "<Plug>(coc-codelens-action)", { silent = true })
 
 -- Text objects
-keymap({"x", "o"}, "if", "<Plug>(coc-funcobj-i)")
-keymap({"x", "o"}, "af", "<Plug>(coc-funcobj-a)")
-keymap({"x", "o"}, "ic", "<Plug>(coc-classobj-i)")
-keymap({"x", "o"}, "ac", "<Plug>(coc-classobj-a)")
+keymap({ "x", "o" }, "if", "<Plug>(coc-funcobj-i)")
+keymap({ "x", "o" }, "af", "<Plug>(coc-funcobj-a)")
+keymap({ "x", "o" }, "ic", "<Plug>(coc-classobj-i)")
+keymap({ "x", "o" }, "ac", "<Plug>(coc-classobj-a)")
 
 -- Float window scroll
-keymap({"n", "i", "v"}, "<C-f>", [[coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"]], { expr = true, silent = true, nowait = true })
-keymap({"n", "i", "v"}, "<C-b>", [[coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"]], { expr = true, silent = true, nowait = true })
+keymap({ "n", "i", "v" }, "<C-f>", [[coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"]], { expr = true, silent = true, nowait = true })
+keymap({ "n", "i", "v" }, "<C-b>", [[coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"]], { expr = true, silent = true, nowait = true })
 
 -- Selection range
-keymap({"n", "x"}, "<C-s>", "<Plug>(coc-range-select)", { silent = true })
+keymap({ "n", "x" }, "<C-s>", "<Plug>(coc-range-select)", { silent = true })
+
+-- CocList shortcuts
+keymap("n", "<leader>cd", ":<C-u>CocList diagnostics<CR>", { silent = true })
+keymap("n", "<leader>cs", ":<C-u>CocList -I symbols<CR>", { silent = true })
+keymap("n", "<leader>cl", ":<C-u>CocList<CR>", { silent = true })
 
 -- Commands
 vim.api.nvim_create_user_command("Format", function()
@@ -98,4 +126,3 @@ vim.api.nvim_create_autocmd("User", {
         vim.fn.CocActionAsync('showSignatureHelp')
     end
 })
-
