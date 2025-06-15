@@ -1,33 +1,30 @@
-vim.cmd[[
-    "mostrar los cambios o el log de git
-    "configuracion de status bar
-    set statusline+=
-    set statusline+=<<~
-    set statusline+=%{expand('%:~:.')}\ [%{WebDevIconsGetFileTypeSymbol()}]
-    set statusline+=~>>
-    set statusline +=%=
+-- Función global para diagnósticos
+_G.status_diagnostic = function()
+  local info = vim.b.coc_diagnostic_info or {}
+  if vim.tbl_isempty(info) then return '' end
 
-    " Add (Neo)Vim's native statusline support
-    " NOTE: Please see `:h coc-status` for integrations with external plugins that
-    " provide custom statusline: lightline.vim, vim-airline
-    function! StatusDiagnostic() abort
-        let info = get(b:, 'coc_diagnostic_info', {})
-        if empty(info) | return '' | endif
-        let msgs = []
-        if get(info, 'error', 0)
-            call add(msgs, ' ' . info['error'])
-        endif
-        if get(info, 'information', 0)
-            call add(msgs, ' ' . info['information'])
-        endif
-        if get(info, 'hint', 0)
-            call add(msgs, ' ' . info['hint'])
-        endif
-        return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
-    endfunction
+  local msgs = {}
+  if info.error and info.error > 0 then table.insert(msgs, ' ' .. info.error) end
+  if info.warning and info.warning > 0 then table.insert(msgs, ' ' .. info.warning) end
+  if info.information and info.information > 0 then table.insert(msgs, ' ' .. info.information) end
+  if info.hint and info.hint > 0 then table.insert(msgs, ' ' .. info.hint) end
 
-    set statusline +=\ ^
-    set statusline +=%{StatusDiagnostic()}
-    set statusline +=\ ^
-    set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
-]]
+  return table.concat(msgs, ' ') .. ' ' .. (vim.g.coc_status or '')
+end
+
+
+-- Statusline en Lua (ordenado y limpio)
+vim.o.statusline = table.concat({
+  ' ',                                            -- Icono decorativo
+  '%f',                                             -- Nombre del archivo con ruta relativa
+  ' [%{WebDevIconsGetFileTypeSymbol()}]',          -- Icono del tipo de archivo
+  '%m',                                             -- Indica si el buffer fue modificado [+]
+  ' %= ',                                           -- Separador central
+  '%{v:lua.status_diagnostic()}',                  -- Diagnóstico Coc
+  ' %<',                                            -- Recorte si se excede el ancho
+  '%{get(g:,"coc_git_status","")}',                -- Git (global)
+  '%{get(b:,"coc_git_status","")}',                -- Git (buffer)
+  '%{get(b:,"coc_git_blame","")}',                 -- Git blame
+  ' %y',                                            -- Tipo de archivo
+  ' | %l:%c '                                       -- Línea y columna
+})
