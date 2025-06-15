@@ -16,7 +16,7 @@ end
 -- Statusline en Lua (ordenado y limpio)
 vim.o.statusline = table.concat({
   ' ',                                            -- Icono decorativo
-  '%f',                                             -- Nombre del archivo con ruta relativa
+  '%t',                                             -- Nombre del archivo con ruta relativa
   ' [%{WebDevIconsGetFileTypeSymbol()}]',          -- Icono del tipo de archivo
   '%m',                                             -- Indica si el buffer fue modificado [+]
   ' %= ',                                           -- Separador central
