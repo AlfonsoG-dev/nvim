@@ -8,7 +8,6 @@
         "warning": "",
         "Error": ""
     },
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
     "java.signatureHelp.enabled": true,
     "java.implementationCodeLens": "all",
     "java.configuration.detectJdks": true,
