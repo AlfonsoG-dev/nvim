@@ -1,5 +1,4 @@
 {
-    "java.enabled": true,
     "java.format.enabled": true,
     "java.completion.enabled": true,
     "java.codeGeneration.useBlocks": true,
@@ -9,23 +8,18 @@
         "warning": "",
         "Error": ""
     },
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
     "java.signatureHelp.enabled": true,
     "java.implementationCodeLens": "all",
     "java.configuration.detectJdks": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
     "java.inlayHints.parameterNames.enabled": "none",
     "java.implementationsCodeLens.enabled": true,
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
-    "java.jdt.ls.lombokSupport.enabled": true,
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17/",
-            "default": true
-        }
-    ],
+   "java.jdt.ls.lombokSupport.enabled": false,
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],

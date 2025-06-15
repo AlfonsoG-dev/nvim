@@ -133,7 +133,6 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>ñ <Plug>(easymotion-k)
 
-
 " Mappings for CoCList
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList --no-quit --normal diagnostics<cr>
