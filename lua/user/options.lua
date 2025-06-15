@@ -5,11 +5,11 @@ end
 vim.opt.showmode           = false
 vim.opt.title              = true
 vim.opt.termguicolors      = true                         -- Use true colors, required for some plugins
-vim.opt.number            = true
-vim.opt.relativenumber    = true
-vim.opt.signcolumn        = 'yes'
-vim.opt.cursorline        = true
-vim.opt.cursorcolumn = true
+vim.opt.number             = true
+vim.opt.relativenumber     = true
+vim.opt.signcolumn         = 'yes'
+vim.opt.cursorline         = true
+vim.opt.cursorcolumn       = true
 
 -- Behavior
 vim.opt.hlsearch           = true
@@ -33,7 +33,7 @@ vim.opt.fileencoding       = "utf-8"
 vim.opt.completeopt        = "menuone,noinsert,noselect"
 vim.opt.updatetime         = 500                          -- Delay until write to Swap and HoldCommand event
 vim.opt.timeoutlen         = 500
-vim.opt.list             = true
+vim.opt.list               = true
 vim.opt.listchars = {
   tab = '→ ',
   trail = '·',

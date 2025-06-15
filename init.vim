@@ -30,7 +30,6 @@ set fillchars=fold:\ ,vert:\|,eob:\ ,msgsep:-
 set path+=**,.,,
 filetype plugin on 
 set isfname-=:
-set splitbelow splitright
 set autoread
 "configurar scheme
 scriptencoding utf-8
