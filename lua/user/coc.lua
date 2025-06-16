@@ -94,11 +94,6 @@ keymap({ "n", "i", "v" }, "<C-b>", [[coc#float#has_scroll() ? coc#float#scroll(0
 -- Selection range
 keymap({ "n", "x" }, "<C-s>", "<Plug>(coc-range-select)", { silent = true })
 
--- CocList shortcuts
-keymap("n", "<leader>cd", ":<C-u>CocList diagnostics<CR>", { silent = true })
-keymap("n", "<leader>cs", ":<C-u>CocList -I symbols<CR>", { silent = true })
-keymap("n", "<leader>cl", ":<C-u>CocList<CR>", { silent = true })
-
 -- Commands
 vim.api.nvim_create_user_command("Format", function()
     vim.fn.CocActionAsync("format")
