@@ -18,7 +18,8 @@
     "java.implementationsCodeLens.enabled": true,
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
-   "java.jdt.ls.lombokSupport.enabled": false,
+    "java.jdt.ls.lombokSupport.enabled": false,
+    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-23",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
