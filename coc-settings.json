@@ -8,9 +8,9 @@
         "warning": "",
         "Error": ""
     },
+    "java.maxConcurrentBuilds": 1,
     "java.signatureHelp.enabled": true,
     "java.implementationCodeLens": "all",
-    "java.configuration.detectJdks": true,
     "java.errors.incompleteClasspath.severity": "ignore",
     "java.project.importHint": true,
     "java.referencesCodeLens.enabled": true,
@@ -19,7 +19,15 @@
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": false,
-    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-23",
+    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-21",
+    "java.jdt.ls.vmargs": "-Xmx2G -Xms100m -XX:+UseParallelGC",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path":"D:/Descargas/instalador/java/jdk/jdk-21",
+            "default": true
+        }
+    ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
@@ -123,6 +131,5 @@
         "value": "󰎠",
         "variable": ""
     },
-    "clangd.path": "~/AppData/Local/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd.exe",
-    "snippets.ultisnips.pythonPrompt": false
+    "clangd.path": "~/AppData/Local/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd.exe"
 }
