@@ -19,12 +19,12 @@
     "java.server.launchMode": "Standard",
     "java.trace.server": "verbose",
     "java.jdt.ls.lombokSupport.enabled": false,
-    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-21",
+    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.2",
     "java.jdt.ls.vmargs": "-Xmx2G -Xms100m -XX:+UseParallelGC",
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-21",
-            "path":"D:/Descargas/instalador/java/jdk/jdk-21",
+            "name": "JavaSE-23",
+            "path":"D:/Descargas/instalador/java/jdk/jdk-23.0.2",
             "default": true
         }
     ],
