@@ -56,7 +56,7 @@ set linebreak
 set showbreak=↪
 set wildmode=full
 set ff=dos
-set fileformats=dos,unix
+set fileformats=dos
 set confirm
 set history=100
 syntax on
