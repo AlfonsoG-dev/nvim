@@ -26,6 +26,7 @@ vim.opt.splitright         = true
 vim.opt.scrolloff          = 12                           -- Minimum offset in lines to screen borders
 vim.opt.sidescrolloff      = 8
 vim.opt.shortmess:append("SI")
+vim.opt.iskeyword:remove("_")
 
 -- Vim specific
 vim.opt.hidden             = true                         -- Do not save when switching buffers
