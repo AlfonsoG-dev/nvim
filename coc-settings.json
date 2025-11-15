@@ -14,6 +14,8 @@
 
     "python.pythonPath": "C:/Python314/python.exe",
 
+    "snippets.ultisnips.enable": true,
+
     "codeLens.enable": true,
     "codeLens.position": "top",
     "codeLens.separator": "󰕞",
@@ -46,19 +48,24 @@
     "git.addedSign.text": "",
     "git.removedSign.text": "",
     "git.changedSign.text": "󰷭",
-    
+
     "hover.target": "float",
+    "hover.autoHide": false,
+
     "coc.preferences.formatOnSave": false,
     "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableLinkedEditing": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "coc.preferences.useQuickfixForLocations": true,
     "semanticTokens.enable": true,
 
     "diagnostic.errorSign": "",
     "diagnostic.infoSign":"",
     "diagnostic.hintSign": "󰘥",
     "diagnostic.warningSign": "",
+    "suggest.noselect": false,
+    "suggest.enablePreselect": true,
     "suggest.insertMode": "insert",
     "suggest.removeDuplicateItems": true,
     "suggest.completionItemKindLabels": {

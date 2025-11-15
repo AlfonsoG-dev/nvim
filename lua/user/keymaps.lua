@@ -84,32 +84,31 @@ nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 -- search the current word under cursor
 keymap('n', '<leader>ll', function()
   local word = vim.fn.expand("<cword>")
-  local ext = vim.fn.expand("%:e")  -- extensión del archivo actual
-  local pattern = '**/*.' .. ext
-  -- \C para distinción mayúsculas/minúsculas
-  -- \< y \> para coincidir palabra exacta
-  vim.cmd('vimgrep /\\C\\<' .. word .. '\\>/j ' .. pattern)
+  if word == "" then return end
+
+  -- Escapar caracteres especiales de Vim regex
+  word = vim.fn.escape(word, '\\/.*$^~[]')
+
+  local ext = vim.fn.expand("%:e")
+
+  -- Si no hay extensión, buscar en todos los archivos
+  local pattern = ext ~= "" and ('**/*.' .. ext) or '**/*'
+
+  -- Buscar palabra exacta (case sensitive): \C\<word\>
+  vim.cmd('vimgrep /\\C\\<' .. word .. '\\>/gj ' .. pattern)
+
+  -- Abrir resultados
   vim.cmd('copen')
-end, { noremap = true, silent = true, desc = "Buscar palabra exacta (sensitiva) en archivos del mismo tipo" })
+end, {
+  noremap = true,
+  silent = true,
+  desc = "Buscar palabra exacta (case-sensitive) en archivos del mismo tipo"
+})
 -- git keymaps
 nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 
-
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
-
--- Browser search
-function _G.search_word_google()
-  local word = vim.fn.expand("<cword>")
-  local query = "https://www.google.com/search?q=" .. word
-
-  if vim.fn.has("win32") == 1 then
-    os.execute('start "" "' .. query .. '"')
-  else
-    os.execute('xdg-open "' .. query .. '"')
-  end
-end
-nnoremap("<leader>g", "<CMD>lua _G.search_word_google()<CR>")
