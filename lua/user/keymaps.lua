@@ -1,5 +1,4 @@
--- General keymaps that are not pluggin dependant
--- the file "lua/lsp/utils.lua" contains lsp-specific commands.
+-- General key maps
 
 local Utils = require("user.utils")
 local opts = {noremap = true, silent = true}
@@ -15,7 +14,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR><Esc>", opts)
 -- markdown 
 nmap('<leader>rm', '<Plug>MarkdownPreviewToggle')
 
---reize window
+--resise window
 keymap("n", "<C-A-Down>", ":resize +2 <CR>", opts)
 keymap("n", "<C-A-Up>", ":resize -2 <CR>", opts)
 keymap("n", "<C-A-Right>", ":vertical resize -2 <CR>", opts)
@@ -53,7 +52,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 keymap("n", "j", "v:count == 0 ? 'gj' : 'j'", {expr = true, silent = true})
 keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", {expr = true, silent = true})
 
--- Increment/decrement
+-- Increment/reduce
 keymap('n', '+', '<C-a>', opts)
 keymap('n', '-', '<C-x>', opts)
 
@@ -71,7 +70,7 @@ nnoremap("<A-w>", ":bdelete!<CR>")
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Telescope keymaps
+-- Telescope key maps
 nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
@@ -101,7 +100,3 @@ nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
-
--- coc-powershell terminal
-nnoremap("<A-T>", "<Cmd>:CocCommand powershell.hideTerminal<CR>")
-nnoremap("<A-E>", "<Cmd>:CocCommand powershell.showTerminal<CR>")
