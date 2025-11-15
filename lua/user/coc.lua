@@ -5,24 +5,16 @@ function _G.show_docs()
   local word = vim.fn.expand("<cword>")
   local ft = vim.bo.filetype
 
-  -- Si CoC está listo y tiene proveedor para hover → usar hover
-  if vim.api.nvim_eval('coc#rpc#ready()') == 1
-     and vim.fn.CocHasProvider("hover") == 1 then
-    vim.fn.CocActionAsync("doHover")
+  -- Si estás en un archivo de ayuda (help, vimscript)
+  if vim.fn.index({ "vim", "help" }, ft) >= 0 then
+    vim.cmd("help " .. word)
     return
   end
 
-  -- Si NO hay soporte → buscar en Google con tipo de archivo
-  local query = string.format(
-    "https://www.google.com/search?q=%s+%s",
-    ft,
-    word
-  )
-
-  if vim.fn.has("win32") == 1 then
-    os.execute('start "" "' .. query .. '"')
-  else
-    os.execute('xdg-open "' .. query .. '"')
+  -- Si CoC está listo → hover normal
+  if vim.api.nvim_eval('coc#rpc#ready()') == 1 then
+    vim.fn.CocActionAsync("doHover")
+    return
   end
 end
 

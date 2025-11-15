@@ -112,3 +112,23 @@ nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
+
+function _G.search_word()
+    local word = vim.fn.expand("<cword>")
+    local ft = vim.bo.filetype
+  -- Si NO hay lenguaje instalado → Buscar en Google
+  local query = string.format(
+    "https://www.google.com/search?q=%s+%s",
+    ft,
+    word
+  )
+
+  if vim.fn.has("win32") == 1 then
+    os.execute('start "" "' .. query .. '"')
+  else
+    os.execute('xdg-open "' .. query .. '"')
+  end
+end
+keymap("n", "<C-A-Down>", ":resize +2 <CR>", opts)
+keymap("n", "<leader>g", "<CMD>lua _G.search_word()<CR>", opts)
+
