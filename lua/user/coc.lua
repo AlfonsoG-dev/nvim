@@ -7,6 +7,7 @@ local ft = {
   "css",
   "json",
   "sql",
+  "python"
 }
 
 vim.api.nvim_create_autocmd("FileType", {

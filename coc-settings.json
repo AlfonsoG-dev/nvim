@@ -12,6 +12,8 @@
     "typescript.format.insertSpaceAfterCommaDelimiter": false,
     "typescript.implementationsCodeLens.enabled": true,
 
+    "python.pythonPath": "C:/Python314/python.exe",
+
     "codeLens.enable": true,
     "codeLens.position": "top",
     "codeLens.separator": "󰕞",
