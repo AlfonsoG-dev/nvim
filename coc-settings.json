@@ -1,44 +1,4 @@
 {
-    "java.format.enabled": true,
-    "java.completion.enabled": true,
-    "java.codeGeneration.useBlocks": true,
-    "java.codeGeneration.generateComments": true,
-    "java.jdt.ls.statusIcons": {
-        "ready": "󰩐",
-        "warning": "",
-        "Error": ""
-    },
-    "java.maxConcurrentBuilds": 1,
-    "java.signatureHelp.enabled": true,
-    "java.implementationCodeLens": "all",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "java.project.importHint": true,
-    "java.referencesCodeLens.enabled": true,
-    "java.inlayHints.parameterNames.enabled": "none",
-    "java.implementationsCodeLens.enabled": true,
-    "java.server.launchMode": "Standard",
-    "java.trace.server": "verbose",
-    "java.jdt.ls.lombokSupport.enabled": false,
-    "java.jdt.ls.java.home": "D:/Descargas/instalador/java/jdk/jdk-23.0.2",
-    "java.jdt.ls.vmargs": "-Xmx2G -Xms100m -XX:+UseParallelGC",
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-23",
-            "path":"D:/Descargas/instalador/java/jdk/jdk-23.0.2",
-            "default": true
-        }
-    ],
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ],
-
-    "pyright.enable": true,
-    "pyright.inlayHints.variableTypes": false,
-    "pyright.organizeimports.provider": "pyright",
-    "pyright.inlayHints.functionReturnTypes": false,
-    "pyright.completion.importSupport": true,
-    "python.pythonPath": "C:/Python314/python.exe",
-
     "javascript.referencesCodeLens.enabled": true,
     "javascript.implementationsCodeLens.enabled": true,
     "javascript.preferences.useAliasesForRenames": false,
@@ -51,10 +11,6 @@
     "typescript.preferences.useAliasesForRenames": false,
     "typescript.format.insertSpaceAfterCommaDelimiter": false,
     "typescript.implementationsCodeLens.enabled": true,
-
-    "powershell.startAutomatically": false,
-    "powershell.powerShellExePath": "pwsh.exe",
-    "powershell.integratedConsole.showOnStartup": false,
 
     "codeLens.enable": true,
     "codeLens.position": "top",
@@ -130,6 +86,5 @@
         "unit": "󰑭",
         "value": "󰎠",
         "variable": ""
-    },
-    "clangd.path": "~/AppData/Local/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd.exe"
+    }
 }
