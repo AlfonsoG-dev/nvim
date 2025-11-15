@@ -100,3 +100,17 @@ nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
+
+-- Browser search
+function _G.search_word_google()
+  local word = vim.fn.expand("<cword>")
+  local query = "https://www.google.com/search?q=" .. word
+
+  if vim.fn.has("win32") == 1 then
+    os.execute('start "" "' .. query .. '"')
+  else
+    os.execute('xdg-open "' .. query .. '"')
+  end
+end
+
+vim.keymap.set("n", "<leader>g", "<CMD>lua _G.search_word_google()<CR>", { silent = true })
