@@ -112,5 +112,4 @@ function _G.search_word_google()
     os.execute('xdg-open "' .. query .. '"')
   end
 end
-
-vim.keymap.set("n", "<leader>g", "<CMD>lua _G.search_word_google()<CR>", { silent = true })
+nnoremap("<leader>g", "<CMD>lua _G.search_word_google()<CR>")
