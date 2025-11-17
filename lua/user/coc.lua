@@ -68,14 +68,10 @@ vim.api.nvim_create_autocmd("FileType", {
     keyset("n", "K", "<CMD>lua _G.show_docs()<CR>", normal_opts)
 
     -- ==== CODE ACTIONS / RENAME ====
-    keyset("n", "<leader>rn", "<Plug>(coc-rename)", normal_opts)
+    keyset("n", "<leader>R", "<Plug>(coc-rename)", normal_opts)
     keyset("n", "<leader>qf", "<Plug>(coc-fix-current)", normal_opts)
     keyset("x", "<leader>a", "<Plug>(coc-codeaction-selected)")
     keyset("n", "<leader>a", "<Plug>(coc-codeaction-selected)", normal_opts)
-
-    -- ==== FORMAT =====
-    keyset("x", "<leader>f", "<Plug>(coc-format-selected)")
-    keyset("n", "<leader>f", "<Plug>(coc-format-selected)", normal_opts)
 
     -- ==== REFACTOR ====
     keyset("n", "<leader>re", "<Plug>(coc-codeaction-refactor)", normal_opts)
