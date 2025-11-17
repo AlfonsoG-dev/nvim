@@ -18,6 +18,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rhubarb.git'
+Plug 'https://github.com/lewis6991/gitsigns.nvim'
 call plug#end()
 "change fillchars for folding, vertical split end of buffer, and message
 "separator
@@ -126,6 +127,7 @@ map <Leader>ñ <Plug>(easymotion-k)
 
 "importe de configuracion basica
 lua << EOF
+require("user.gitsigns")
 require("user.statusline")
 require("user.cursor")
 require("user.options")
