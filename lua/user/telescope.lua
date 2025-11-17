@@ -1,5 +1,4 @@
 require('telescope').load_extension("conventional_commits")
-require('telescope').load_extension('coc')
 require("telescope").setup{
 defaults = {
       vimgrep_arguments = {
@@ -52,10 +51,6 @@ defaults = {
           media_files = {
              filetypes = { "png", "webp", "jpg", "jpeg" },
              find_cmd = "rg", -- find command (defaults to `fd`)
-          },
-        coc = {
-            theme = 'kanagawa-dragon',
-            prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
-        },
+          }
     },
 }

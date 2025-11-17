@@ -1,10 +1,7 @@
 call plug#begin("~/AppData/local/nvim/plugged")
-Plug 'maxmellon/vim-jsx-pretty'
 Plug 'rebelot/kanagawa.nvim'
 
 Plug 'easymotion/vim-easymotion'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
@@ -12,9 +9,8 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'olacin/telescope-cc.nvim'
-Plug 'fannheyward/telescope-coc.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
@@ -130,7 +126,6 @@ map <Leader>ñ <Plug>(easymotion-k)
 
 "importe de configuracion basica
 lua << EOF
-require("user.coc")
 require("user.statusline")
 require("user.cursor")
 require("user.options")
