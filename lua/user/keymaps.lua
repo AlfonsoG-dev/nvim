@@ -132,7 +132,7 @@ function _G.search_word()
     os.execute('xdg-open "' .. query .. '"')
   end
 end
-keymap("n", "<leader>g", "<CMD>lua _G.search_word()<CR>", opts)
+keymap("n", "<leader>gg", "<CMD>lua _G.search_word()<CR>", opts)
 -- native suggestion
 vim.keymap.set("i", "<Tab>", function()
   -- Obtener la columna del cursor (0-index)
