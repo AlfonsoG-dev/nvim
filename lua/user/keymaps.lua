@@ -109,6 +109,9 @@ nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
+-- navigate between file changes
+keymap("n", "<space>j", "<Cmd>:Gitsigns next_hunk<CR>")
+keymap("n", "<space>k", "<Cmd>:Gitsigns prev_hunk<CR>")
 
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
