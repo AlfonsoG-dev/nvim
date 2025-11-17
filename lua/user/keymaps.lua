@@ -129,6 +129,17 @@ function _G.search_word()
     os.execute('xdg-open "' .. query .. '"')
   end
 end
-keymap("n", "<C-A-Down>", ":resize +2 <CR>", opts)
 keymap("n", "<leader>g", "<CMD>lua _G.search_word()<CR>", opts)
+-- native suggestion
+vim.keymap.set("i", "<Tab>", function()
+  -- Obtener la columna del cursor (0-index)
+  local col = vim.fn.col(".") - 1
+  
+  -- Si estamos al inicio o el carácter anterior es un espacio en blanco
+  if col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
+    return "<Tab>"   -- Inserta tab normal
+  else
+    return "<C-n>"   -- Abre completado nativo
+  end
+end, { expr = true, noremap = true })
 
