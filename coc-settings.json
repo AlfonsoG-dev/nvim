@@ -54,6 +54,7 @@
     "hover.target": "float",
     "hover.autoHide": false,
 
+    "coc.source.file.enable": false,
     "coc.preferences.formatOnSave": false,
     "coc.preferences.formatOnType": false,
     "coc.preferences.bracketEnterImprove": true,

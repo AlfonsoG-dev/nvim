@@ -1,3 +1,4 @@
+vim.opt.shadafile = "NONE"
 -- =========================
 --  SHOW DOCS
 -- =========================
@@ -87,5 +88,21 @@ vim.api.nvim_create_autocmd("FileType", {
     keyset("n", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', float_opts)
     keyset("i", "<C-f>", 'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(1)<cr>" : "<Right>"', float_opts)
     keyset("i", "<C-b>", 'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(0)<cr>" : "<Left>"', float_opts)
+
+    -- Mappings for CoCList
+    -- Show all diagnostics
+    keyset("n", "<space>a", ":<C-u>CocList --no-quit --normal diagnostics<cr>", normal_opts)
+    -- Manage extensions
+    keyset("n", "<space>e", ":<C-u>CocList extensions<cr>", normal_opts)
+    -- Show commands
+    keyset("n", "<space>c", ":<C-u>CocList commands<cr>", normal_opts)
+    -- Find symbols of current document
+    keyset("n", "<space>o", ":<C-u>CocList --auto-preview outline<cr>", normal_opts)
+    -- Find symbols of lenguage
+    keyset("n", "<space>s", ":<C-u>CocList --interactive symbols<cr>", normal_opts)
+    -- re-open the seach gd gr gi location
+    keyset("n", "<space>l", ":<C-u>CocList --no-quit --normal location<CR>", normal_opts)
+    -- Resume latest coc list
+    keyset("n", "<space>gs", ":<C-u>CocList --no-quit --normal gchanges<CR>", normal_opts)
   end
 })
