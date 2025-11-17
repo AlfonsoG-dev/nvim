@@ -5,6 +5,26 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+" LSP
+Plug 'neovim/nvim-lspconfig'
+" java
+Plug 'mfussenegger/nvim-jdtls'
+
+" Mason (LSP installer)
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+
+" Snippets
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+
 Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
@@ -122,8 +142,8 @@ nmap ss <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>ñ <Plug>(easymotion-k)
+map <leader>j <Plug>(easymotion-j)
+map <leader>ñ <Plug>(easymotion-k)
 
 "importe de configuracion basica
 lua << EOF
@@ -134,4 +154,6 @@ require("user.options")
 require("user.keymaps")
 require("user.termn")
 require("user.telescope")
+require("user.lsp")
+require("user.java")
 EOF

@@ -109,10 +109,6 @@ nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
--- navigate between file changes
-keymap("n", "<space>j", "<Cmd>:Gitsigns prev_hunk<CR>")
-keymap("n", "<space>k", "<Cmd>:Gitsigns next_hunk<CR>")
-
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
 
@@ -133,16 +129,3 @@ function _G.search_word()
   end
 end
 keymap("n", "<leader>gg", "<CMD>lua _G.search_word()<CR>", opts)
--- native suggestion
-vim.keymap.set("i", "<Tab>", function()
-  -- Obtener la columna del cursor (0-index)
-  local col = vim.fn.col(".") - 1
-  
-  -- Si estamos al inicio o el carácter anterior es un espacio en blanco
-  if col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
-    return "<Tab>"   -- Inserta tab normal
-  else
-    return "<C-n>"   -- Abre completado nativo
-  end
-end, { expr = true, noremap = true })
-
