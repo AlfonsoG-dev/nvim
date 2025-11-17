@@ -32,22 +32,9 @@
 
 ---
 
-# Configuration of <p style="color:grey;display:inline;">coc-nvim</p> completion.
-- install the packages for a variety of languages.
-- In the command line use the following list of languages to install for code completion:
-```terminal
-CocInstall coc-tsserver coc-json coc-html coc-css coc-eslint coc-sql coc-git coc-vimlsp coc-sh coc-restclient
-```
-> This is the list of compatible languages [languages servers](https://github.com/neoclide/coc.nvim/wiki/Language-servers)
-
 ## Additional plugins.
 > Config vim-figitive for git workflow
 >- [vim-fugitive](https://github.com/tpope/vim-fugitive)
-
-## Change coc configuration 
-- NodeJS: set up the node path environment variable.
-- Open coc configuration using: `nvim ~\AppData\Local\nvim\coc-settings.json`.
-- Change the node path to the environment variable: `C:\Program Files\nodejs` or use the path to the node installation.
 
 ---
 
