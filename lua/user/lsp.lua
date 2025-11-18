@@ -91,3 +91,6 @@ vim.keymap.set("n", "<space>o", require("telescope.builtin").lsp_document_symbol
 vim.keymap.set("n", "gi", require("telescope.builtin").lsp_implementations, {
     desc = "Search implementation",
 })
+vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, {
+    desc = "Search references",
+})
