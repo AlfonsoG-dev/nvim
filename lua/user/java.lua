@@ -1,3 +1,9 @@
+-- Prevent multiple starts of jdtls
+if vim.g.jdtls_active then
+  return
+end
+vim.g.jdtls_active = true
+
 local jdtls = require("jdtls")
 
 -------------------------------------------------------------------
@@ -12,21 +18,18 @@ end
 -------------------------------------------------------------------
 -- 2. Workspace directory (Windows compatible)
 -------------------------------------------------------------------
--- Use USERPROFILE instead of HOME
 local home = os.getenv("USERPROFILE") or os.getenv("HOME")
-
--- Use backslashes for Windows paths
 local workspace_dir = home .. "\\AppData\\Local\\jdtls\\workspace\\" ..
 vim.fn.fnamemodify(root_dir, ":p:h:t")
 
 -------------------------------------------------------------------
--- 3. Correct path to jdtls installed by Mason
+-- 3. Path to jdtls by Mason
 -------------------------------------------------------------------
 local mason_path = vim.fn.stdpath("data") .. "\\mason\\packages\\jdtls"
 local jdtls_cmd = mason_path .. "\\bin\\jdtls.bat"
 
 -------------------------------------------------------------------
--- 4. jdtls configuration
+-- 4. Configuration
 -------------------------------------------------------------------
 local config = {
     cmd = {
@@ -46,7 +49,7 @@ local config = {
     },
 
     init_options = {
-        bundles = {}, -- add Java debugger later
+        bundles = {},
     },
 }
 
