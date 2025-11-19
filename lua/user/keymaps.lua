@@ -82,7 +82,7 @@ nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
 -- search the current word under cursor
-keymap('n', '<leader>ll', function()
+keymap('n', 'gr', function()
   local word = vim.fn.expand("<cword>")
   if word == "" then return end
 
@@ -129,3 +129,16 @@ function _G.search_word()
   end
 end
 keymap("n", "<leader>gg", "<CMD>lua _G.search_word()<CR>", opts)
+
+-- native suggestion
+vim.keymap.set("i", "<Tab>", function()
+  -- Obtener la columna del cursor (0-index)
+  local col = vim.fn.col(".") - 1
+  
+  -- Si estamos al inicio o el carácter anterior es un espacio en blanco
+  if col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
+    return "<Tab>"   -- Inserta tab normal
+  else
+    return "<C-n>"   -- Abre completado nativo
+  end
+end, { expr = true, noremap = true })
