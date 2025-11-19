@@ -155,5 +155,4 @@ require("user.keymaps")
 require("user.termn")
 require("user.telescope")
 require("user.lsp")
-require("user.java")
 EOF
