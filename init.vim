@@ -5,26 +5,6 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-" LSP
-Plug 'neovim/nvim-lspconfig'
-" java
-Plug 'mfussenegger/nvim-jdtls'
-
-" Mason (LSP installer)
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
-
-" Autocompletion
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-
-" Snippets
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-
 Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
@@ -38,7 +18,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tpope/vim-rhubarb.git'
-Plug 'https://github.com/lewis6991/gitsigns.nvim'
 call plug#end()
 "change fillchars for folding, vertical split end of buffer, and message
 "separator
@@ -147,12 +126,10 @@ map <leader>ñ <Plug>(easymotion-k)
 
 "importe de configuracion basica
 lua << EOF
-require("user.gitsigns")
 require("user.statusline")
 require("user.cursor")
 require("user.options")
 require("user.keymaps")
 require("user.termn")
 require("user.telescope")
-require("user.lsp")
 EOF
