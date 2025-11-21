@@ -75,14 +75,13 @@ nnoremap("<leader>F", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>h", "<Cmd>Telescope current_buffer_fuzzy_find<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
-nnoremap("<leader>c", "<Cmd>Telescope coc<CR>")
 nnoremap("<leader>gs", "<Cmd>Telescope git_status<CR>")
 nnoremap("<leader>gc", "<Cmd>Telescope conventional_commits<CR>")
 nnoremap("<leader>k", "<Cmd>Telescope keymaps<CR>")
 nnoremap("<leader>m", "<Cmd>Telescope marks<CR>")
 
 -- search the current word under cursor
-keymap('n', 'gr', function()
+keymap('n', '<leader>ll', function()
   local word = vim.fn.expand("<cword>")
   if word == "" then return end
 
@@ -109,9 +108,6 @@ nnoremap("<space>ga", "<cmd>:Git add %<CR>")
 nnoremap("<space>gp", "<Cmd>:Git push<CR>")
 nnoremap("<space>gd", "<Cmd>:Git diff<CR>")
 nnoremap("<space>gc", "<Cmd>:Git commit<CR>")
--- gitsigns
-nnoremap("<space>k", "<Cmd>:Gitsigns next_hunk<CR>")
-nnoremap("<space>j", "<Cmd>:Gitsigns prev_hunk<CR>")
 -- File explorer
 nnoremap("<C-a>", "<Cmd>:NERDTreeToggle<CR>")  -- NvimTree
 
@@ -132,16 +128,3 @@ function _G.search_word()
   end
 end
 keymap("n", "<leader>gg", "<CMD>lua _G.search_word()<CR>", opts)
-
--- native suggestion
-vim.keymap.set("i", "<Tab>", function()
-  -- Obtener la columna del cursor (0-index)
-  local col = vim.fn.col(".") - 1
-  
-  -- Si estamos al inicio o el carácter anterior es un espacio en blanco
-  if col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
-    return "<Tab>"   -- Inserta tab normal
-  else
-    return "<C-n>"   -- Abre completado nativo
-  end
-end, { expr = true, noremap = true })

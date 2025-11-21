@@ -8,6 +8,21 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
+"Language server provider(LSP)
+Plug 'neovim/nvim-lspconfig'
+Plug 'mfussenegger/nvim-jdtls'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+" Auto completion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+" Snippets
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'olacin/telescope-cc.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -134,4 +149,5 @@ require("user.options")
 require("user.keymaps")
 require("user.termn")
 require("user.telescope")
+require("lsps.lsp")
 EOF
