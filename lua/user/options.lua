@@ -2,7 +2,7 @@ if vim.loader then
     vim.loader.enable()
 end
 -- Visual
-vim.opt.showmode           = false
+vim.opt.showmode           = true
 vim.opt.title              = true
 vim.opt.termguicolors      = true                         -- Use true colors, required for some plugins
 vim.opt.number             = true
@@ -31,7 +31,7 @@ vim.opt.iskeyword:remove("_")
 -- Vim specific
 vim.opt.hidden             = true                         -- Do not save when switching buffers
 vim.opt.fileencoding       = "utf-8"
-vim.opt.completeopt        = "menuone,noinsert,noselect"
+vim.opt.completeopt        = "fuzzy,menuone,noinsert,noselect,popup"
 vim.opt.updatetime         = 500                          -- Delay until write to Swap and HoldCommand event
 vim.opt.timeoutlen         = 500
 vim.opt.list               = true
