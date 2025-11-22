@@ -117,7 +117,7 @@ set wildignore+=*.DS_Store
 set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
 set wildignorecase  " ignore file and dir name cases in cmd-completion
 
-"
+" custom color scheme
 colorscheme kanagawa-dragon
 
 "react jsx highlight
