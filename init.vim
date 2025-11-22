@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'rebelot/kanagawa.nvim'
+Plug 'xiyaowong/transparent.nvim'
 
 Plug 'easymotion/vim-easymotion'
 
@@ -152,4 +153,5 @@ require("user.termn")
 require("user.telescope")
 require("lsps.lsp")
 require("lsps.sonar")
+require('transparent').setup({})
 EOF
