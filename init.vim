@@ -22,6 +22,7 @@ Plug 'hrsh7th/cmp-cmdline'
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'iamkarasik/sonarqube.nvim'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'olacin/telescope-cc.nvim'
@@ -150,4 +151,5 @@ require("user.keymaps")
 require("user.termn")
 require("user.telescope")
 require("lsps.lsp")
+require("lsps.sonar")
 EOF
