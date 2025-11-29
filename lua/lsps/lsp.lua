@@ -50,7 +50,9 @@ cmp.setup({
             luasnip.lsp_expand(args.body)
         end,
     },
-
+    window = {
+        documentation = cmp.config.window.bordered(),
+    },
     mapping = {
         ["<Tab>"] = cmp.mapping.select_next_item(),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
