@@ -1,5 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'rebelot/kanagawa.nvim'
+Plug 'neanias/everforest-nvim'
 
 Plug 'easymotion/vim-easymotion'
 
@@ -118,7 +119,7 @@ set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
 set wildignorecase  " ignore file and dir name cases in cmd-completion
 
 " Color scheme config
-colorscheme kanagawa-dragon
+colorscheme everforest
 
 "react jsx highlight
 let g:vim_jsx_pretty_colorful_config = 1
