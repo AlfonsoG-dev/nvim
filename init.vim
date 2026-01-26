@@ -1,4 +1,5 @@
 call plug#begin("~/AppData/local/nvim/plugged")
+Plug 'tribela/transparent.nvim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'neanias/everforest-nvim'
 
@@ -119,7 +120,7 @@ set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
 set wildignorecase  " ignore file and dir name cases in cmd-completion
 
 " Color scheme config
-colorscheme everforest
+colorscheme kanagawa-dragon
 
 "react jsx highlight
 let g:vim_jsx_pretty_colorful_config = 1
