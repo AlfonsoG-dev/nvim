@@ -1,7 +1,6 @@
 call plug#begin("~/AppData/local/nvim/plugged")
 Plug 'tribela/transparent.nvim'
 Plug 'rebelot/kanagawa.nvim'
-Plug 'neanias/everforest-nvim'
 
 Plug 'easymotion/vim-easymotion'
 
