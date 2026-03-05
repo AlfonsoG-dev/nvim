@@ -13,36 +13,41 @@ require("mason-lspconfig").setup({
 -----------------------------------------------------------------------
 local cmp = require("cmp")
 local luasnip = require("luasnip")
-local kind_icons = {
-    Class         = "",
-    Color         = "",
-    Constructor   = "",
-    Enum          = "󰠱",
-    EnumMember    = "",
-    Field         = "󰜢",
-    File          = "󰈙",
-    Folder        = "󰉋",
-    Function      = "󰊕",
-    Interface     = "",
-    Keyword       = "󱜦",
-    Constant      = "󱃘",
-    Event         = "",
-    Operator      = "",
-    TypeParameter = "",
-    Method        = "󰆧",
-    Module        = "󰙅",
-    Property      = "",
-    Reference     = "󰈇",
-    Snippet       = "",
-    Struct        = "",
-    Text          = "󱎸",
-    Unit          = "󰑭",
-    Value         = "󰎠",
-    Variable      = "",
+local lspkind = require('lspkind')
+lspkind.init({
+    mode = 'symbol_text',
+    preset = 'codicons',
+    symbol_map = {
+        Class         = "",
+        Color         = "",
+        Constructor   = "",
+        Enum          = "󰠱",
+        EnumMember    = "",
+        Field         = "󰜢",
+        File          = "󰈙",
+        Folder        = "󰉋",
+        Function      = "󰊕",
+        Interface     = "",
+        Keyword       = "󱜦",
+        Constant      = "󱃘",
+        Event         = "",
+        Operator      = "",
+        TypeParameter = "",
+        Method        = "󰆧",
+        Module        = "󰙅",
+        Property      = "",
+        Reference     = "󰈇",
+        Snippet       = "",
+        Struct        = "",
+        Text          = "󱎸",
+        Unit          = "󰑭",
+        Value         = "󰎠",
+        Variable      = "",
 
-    -- fallback
-    Default       = "󰳾",
-}
+        -- fallback
+        Default       = "󰳾",
+    },
+})
 
 cmp.setup({
     snippet = {
@@ -69,11 +74,20 @@ cmp.setup({
     -- 🔥 HERE: Custom completion item icons
     -------------------------------------------------------------------
     formatting = {
-        format = function(entry, item)
-            item.kind = string.format("%s %s", kind_icons[item.kind] or kind_icons.Default, item.kind)
-            return item
-        end,
-    },
+        fields = { 'abbr', 'icon', 'kind', 'menu' },
+        format = lspkind.cmp_format({
+            maxwidth = {
+                menu = 50, -- leading text (labelDetails)
+                abbr = 50, -- actual suggestion item
+            },
+            ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
+            show_labelDetails = true, -- show labelDetails in menu. Disabled by default
+            before = function (entry, vim_item)
+                -- ...
+                return vim_item
+            end
+        })
+    }
 })
 
 -- Error navigation

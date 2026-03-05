@@ -24,6 +24,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'iamkarasik/sonarqube.nvim'
+Plug 'onsails/lspkind.nvim'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'olacin/telescope-cc.nvim'
