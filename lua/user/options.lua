@@ -10,6 +10,7 @@ vim.opt.relativenumber     = true
 vim.opt.signcolumn         = 'yes'
 vim.opt.cursorline         = true
 vim.opt.cursorcolumn       = true
+vim.opt.pumblend           = 0
 
 -- Behavior
 vim.opt.hlsearch           = true
