@@ -11,9 +11,12 @@ Plug 'preservim/nerdtree'
 
 "Language server provider(LSP)
 Plug 'neovim/nvim-lspconfig'
-Plug 'mfussenegger/nvim-jdtls'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+
+"Language lsp config
+Plug 'mfussenegger/nvim-jdtls'
+
 " Auto completion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
