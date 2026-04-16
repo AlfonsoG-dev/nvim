@@ -89,6 +89,18 @@ cmp.setup({
         })
     }
 })
+-- for react
+
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+vim.lsp.config("ts_ls", {
+    capabilities = capabilities,
+    filetypes = {
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+    },
+})
 
 -- Error navigation
 vim.keymap.set("n", "<space>a", require("telescope.builtin").diagnostics, {
