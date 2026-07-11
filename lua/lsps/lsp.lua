@@ -92,15 +92,16 @@ cmp.setup({
 -- for react
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
+capabilities.textDocument.inlayHint = {
+    dynamicRegistration = false,
+}
 vim.lsp.config("ts_ls", {
     capabilities = capabilities,
-    filetypes = {
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-    },
+    init_options = {
+        hostInfo = "neovim",
+    }
 })
+vim.lsp.enable("ts_ls")
 
 -- Error navigation
 vim.keymap.set("n", "<space>a", require("telescope.builtin").diagnostics, {
