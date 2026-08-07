@@ -5,8 +5,6 @@ end
 vim.opt.showmode           = true
 vim.opt.title              = true
 vim.opt.termguicolors      = true                         -- Use true colors, required for some plugins
-vim.opt.number             = true
-vim.opt.relativenumber     = true
 vim.opt.signcolumn         = 'yes'
 vim.opt.cursorline         = true
 vim.opt.cursorcolumn       = true
