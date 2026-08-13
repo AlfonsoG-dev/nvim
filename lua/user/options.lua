@@ -8,7 +8,10 @@ vim.opt.termguicolors      = true                         -- Use true colors, re
 vim.opt.signcolumn         = 'yes'
 vim.opt.cursorline         = true
 vim.opt.cursorcolumn       = true
+
 vim.opt.pumblend           = 0
+vim.o.pumborder            = 'rounded'
+vim.o.pummaxwidth          = 40
 
 -- Behavior
 vim.opt.hlsearch           = true
