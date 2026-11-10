@@ -16,6 +16,7 @@ Plug 'williamboman/mason-lspconfig.nvim'
 
 "Language lsp config
 Plug 'mfussenegger/nvim-jdtls'
+Plug 'wuelnerdotexe/vim-astro'
 
 " Auto completion
 Plug 'hrsh7th/nvim-cmp'
