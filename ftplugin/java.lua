@@ -4,7 +4,7 @@ local jdtls = require("jdtls")
 local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
 local root_dir = require("jdtls.setup").find_root(root_markers)
 if root_dir == "" then
-  return
+    return
 end
 
 -- Workspace directory
@@ -15,24 +15,36 @@ local jdtls_path = "D:/Descargas/instalador/java/jdlts/bin/jdtls.bat"
 
 
 local config = {
-  cmd = {
-    jdtls_path,
-    "-data", workspace_dir,
-  },
-  settings = {
-      java = {
-          saveActions = {
-              organizeImports = false,   -- ❌ disable import organization
-          },
-          completion = {
-              importOrder = {},          -- ❌ no import order enforced
-          },
-          project = {
-              sourcePaths = { "src" }
-          }
-      }
-  },
-  root_dir = root_dir,
+    cmd = {
+        jdtls_path,
+        "-data", workspace_dir,
+    },
+    settings = {
+        java = {
+            saveActions = {
+                organizeImports = false,
+            },
+            completion = {
+                importOrder = {},
+            },
+            project = {
+                sourcePaths = { "src" }
+            },
+            imports = {
+                gradle = {
+                    wrapper = {
+                        checksums = {
+                            {
+                                sha256 = "621008afc4f5d59357fcf06ffa644dd5aade5e091bdc363742710445f73cdaf8",
+                                allowed = true,
+                            },
+                        },
+                    },
+                },
+            }
+        },
+    },
+    root_dir = root_dir,
 }
 
 jdtls.start_or_attach(config)
