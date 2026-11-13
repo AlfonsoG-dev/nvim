@@ -1,29 +1,31 @@
-vim.api.nvim_set_hl(0, "SLGitBranch", { fg = "#89b4fa", bold = true })     -- Azul claro
-vim.api.nvim_set_hl(0, "SLGitChanges", { fg = "#f38ba8" })                -- Rojo suave
-vim.api.nvim_set_hl(0, "SLFile",       { fg = "#f9e2af", bold = true })                -- Verde
-vim.api.nvim_set_hl(0, "SLIcon",       { fg = "#a6e3a1" })                -- Amarillo
-vim.api.nvim_set_hl(0, "SLPosition",   { fg = "#cba6f7" })                -- Morado
+-- Highlight groups
+vim.api.nvim_set_hl(0, "SLGitBranch", { fg = "#89b4fa", bold = true })
+vim.api.nvim_set_hl(0, "SLGitChanges", { fg = "#f38ba8" })
+vim.api.nvim_set_hl(0, "SLFile", { fg = "#f9e2af", bold = true })
+vim.api.nvim_set_hl(0, "SLIcon", { fg = "#a6e3a1" })
+vim.api.nvim_set_hl(0, "SLPosition", { fg = "#cba6f7" })
 
 vim.o.statusline = table.concat({
-  '%#SLIcon#', ' ',                        -- Icono decorativo con color
-  '%#SLFile#', '%t',                        -- Nombre del archivo
-  ' [%{WebDevIconsGetFileTypeSymbol()}]',   -- Icono del tipo de archivo
-  '%m',                                     -- Modificado [+]
-  ' %= ',                                   -- Separador central
-  ' %<',                                    -- Truncamiento
+    -- Left section: File information
+    "%#SLIcon#   ",
+    "%#SLFile#%t",
+    " [%{WebDevIconsGetFileTypeSymbol()}]",
+    "%m",
 
-  -- --- Git info (rama + cambios) ---
-  '%#SLGitBranch#',
-  ' %{len(FugitiveHead()) ? " " . FugitiveHead() : ""}',
+    "%=",
 
-  '%#SLGitChanges#',
-  ' %{FugitiveStatusline()}',
+    -- Right section: Git information
+    "%#SLGitBranch#",
+    '%{FugitiveHead() != "" ? " " . FugitiveHead() : ""}',
 
-  -- --- Info del archivo ---
-  '%#SLFile#',
-  ' | %y',
+    "%#SLGitChanges#",
+    "%{FugitiveStatusline()}",
 
-  -- --- Posición ---
-  '%#SLPosition#',
-  ' | %l:%c ',
+    -- File information
+    "%#SLFile#",
+    " | %y",
+
+    -- Cursor position
+    "%#SLPosition#",
+    " | %l:%c ",
 })
