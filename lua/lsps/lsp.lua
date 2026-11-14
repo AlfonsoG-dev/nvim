@@ -3,9 +3,9 @@ require("mason").setup()
 require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
-        "ts_ls"
+        "tsc"
     },
-    automatic_installation = true,
+    automatic_enable = true,
 })
 
 -----------------------------------------------------------------------
@@ -60,6 +60,7 @@ cmp.setup({
         documentation = cmp.config.window.bordered(),
     },
     mapping = {
+        ["<C-Space>"] = cmp.mapping.complete(),
         ["<Tab>"] = cmp.mapping.select_next_item(),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
@@ -89,19 +90,35 @@ cmp.setup({
         })
     }
 })
--- for react
+-- capabilities
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.textDocument.inlayHint = {
     dynamicRegistration = false,
 }
-vim.lsp.config("ts_ls", {
+
+-- Apply capabilities to all LSP servers
+vim.lsp.config("*", {
     capabilities = capabilities,
-    init_options = {
-        hostInfo = "neovim",
-    }
 })
-vim.lsp.enable("ts_ls")
+
+-- Customize tsc (or tsgo) if needed
+vim.lsp.config("tsc", {
+    settings = {
+        ["js/ts"] = {
+            inlayHints = {
+                parameterNames = { enabled = "literals" },
+                parameterTypes = { enabled = true },
+            },
+        },
+    },
+})
+vim.lsp.enable("tsc")
+
+-- configuration of treesitter
+require("nvim-treesitter").setup({
+    ensure_installed = { "tsx", "typescript", "javascript", "html", "lua" },
+})
 
 -- Error navigation
 vim.keymap.set("n", "<space>a", require("telescope.builtin").diagnostics, {
