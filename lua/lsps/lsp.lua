@@ -115,11 +115,6 @@ vim.lsp.config("tsc", {
 })
 vim.lsp.enable("tsc")
 
--- configuration of treesitter
-require("nvim-treesitter").setup({
-    ensure_installed = { "tsx", "typescript", "javascript", "html", "lua" },
-})
-
 -- Error navigation
 vim.keymap.set("n", "<space>a", require("telescope.builtin").diagnostics, {
     desc = "Diagnostics to loclist",
