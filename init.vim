@@ -116,7 +116,7 @@ set diffopt+=linematch:60
 " Ignore certain files and folders when globing
 set wildignore+=*.o,*.obj,*.dylib,*.bin,*.dll,*.exe
 set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/*,*/bin/*,*/obj/*,*/null/*,*/metals/*,*/.bsp/*,*/blop/*,*/node_modules/**
-set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico,*.class,*.log, *.jar
+set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico,*.class,*.log
 set wildignore+=*.pyc,*.pkl
 set wildignore+=*.DS_Store
 set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv
@@ -148,6 +148,7 @@ map <leader>ñ <Plug>(easymotion-k)
 
 "importe de configuracion basica
 lua << EOF
+require("user.tab")
 require("user.statusline")
 require("user.gitsigns")
 require("user.cursor")

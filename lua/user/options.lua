@@ -36,6 +36,7 @@ vim.opt.fileencoding       = "utf-8"
 vim.opt.completeopt        = "fuzzy,menuone,noinsert,noselect,popup"
 vim.opt.updatetime         = 500                          -- Delay until write to Swap and HoldCommand event
 vim.opt.timeoutlen         = 500
+vim.opt.ttimeoutlen         = 0
 vim.opt.list               = true
 vim.opt.listchars = {
   tab = '→ ',
